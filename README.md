@@ -5,14 +5,12 @@
   
 - 👀 **I’m interested in programming, computers in general**
 
-- 🌱 I’m currently learning **Rust**
-
 - 💬 Ask me about **C#, Angular, React**
 
 - 📫 How to reach me **vinaykr0605@gmail.com**
 
 
-- 📄 Know about my experiences [https://drive.google.com/file/d/1UhYeofjDIKEpfVwEDfihd4uEpfd1WmYr/view?usp=sharing])
+- 📄 Know about my experiences [https://drive.google.com/file/d/1MOzZ7WVG1tXBd7Lq6qr47U3hG_vtjO1W/view?usp=drive_link])
 
 <h3 align="left">Connect with me:</h3>
 <p align="left">
