@@ -5,12 +5,10 @@
   
 - 👀 **I’m interested in programming, computers in general**
 
-- 💬 Ask me about **C#, Angular, React**
-
 - 📫 How to reach me **vinaykr0605@gmail.com**
 
 
-- 📄 Know about my experiences [https://drive.google.com/file/d/1MOzZ7WVG1tXBd7Lq6qr47U3hG_vtjO1W/view?usp=drive_link])
+- 📄 Know about my experiences [https://drive.google.com/file/d/1PHEjQxoJ4JwxV9w7avYPqctV8dVReOTy/view?usp=sharing])
 
 <h3 align="left">Connect with me:</h3>
 <p align="left">
