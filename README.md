@@ -23,4 +23,4 @@
 
 ## GitHub Activity
 
-![GitHub Contribution Graph](https://ghchart.rshah.org/vinaykr0605)
+![GitHub Contribution Graph](https://ghchart.rshah.org/vi-nayKR)
