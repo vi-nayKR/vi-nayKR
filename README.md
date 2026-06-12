@@ -9,7 +9,7 @@
   
 🚀 **Passionate about agentic coding, building architecture, and software**
   
-💼 Know about my experiences [here](https://www.linkedin.com/in/vinay-k-r-a6bb51243)
+💼 Know about my experiences [here](https://drive.google.com/file/d/1Olr66SkGuCyv3CfGuM9zKIQ5Vrv9H_lt/view?usp=sharing)
 
 
 ![TypeScript](https://img.shields.io/badge/-TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)
