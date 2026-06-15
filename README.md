@@ -5,11 +5,13 @@
   
 🎓 Bachelor's degree in [Computer Science](https://drive.google.com/file/d/1i6FmuNK0ReoMsbrWvBcJjTLRJCZBa-FR/view?usp=sharing)
   
-💻 **I am a software engineer with 3 years of experience and I’m interested in programming, computers in general**
+💻 **I am a software engineer with 3 years of experience and I'm interested in programming, computers in general**
   
 🚀 **Passionate about agentic coding, building architecture, and software**
   
 💼 Know about my experiences [here](https://drive.google.com/file/d/1Olr66SkGuCyv3CfGuM9zKIQ5Vrv9H_lt/view?usp=sharing)
+
+🌐 **Check out my portfolio** → [portfolio.vinaykr.workers.dev](https://portfolio.vinaykr.workers.dev/)
 
 
 ![TypeScript](https://img.shields.io/badge/-TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)
