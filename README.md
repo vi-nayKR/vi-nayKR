@@ -9,7 +9,7 @@
   
 🚀 **Passionate about agentic coding, building architecture, and software**
   
-💼 Know about my experiences [here](https://drive.google.com/file/d/1IHfPZ9eXhKGk-XLHxpPpp1PcTpLEIYxN/view?usp=drive_link)
+💼 Know about my experiences [here](https://drive.google.com/file/d/11mdOZEMuOfWKWChgJz9eLDnLmCx2rBvW/view?usp=sharing)
 
 🌐 **Check out my portfolio** → [portfolio.vinaykr.workers.dev](https://portfolio.vinaykr.workers.dev/)
 
