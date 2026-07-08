@@ -9,7 +9,7 @@
   
 🚀 **Passionate about agentic coding, building architecture, and software**
   
-💼 Know about my experiences [here](https://github.com/vi-nayKR/resume/raw/refs/heads/main/Vinay-KR-Resume.docx)
+💼 Know about my experiences [here](https://drive.google.com/file/d/1vbbBNqq3YrFkcJ0VWUy3utkPhIQTx1rT/view?usp=sharing)
 
 🌐 **Check out my portfolio** → [portfolio.vinaykr.workers.dev](https://portfolio.vinaykr.workers.dev/)
 
