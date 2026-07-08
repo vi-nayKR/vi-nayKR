@@ -11,7 +11,7 @@
   
 💼 Know about my experiences [here](https://drive.google.com/file/d/1vbbBNqq3YrFkcJ0VWUy3utkPhIQTx1rT/view?usp=sharing)
 
-🌐 **Check out my portfolio** → [portfolio.vinaykr.workers.dev](https://portfolio.vinaykr.workers.dev/)
+🌐 **Check out my portfolio** → [portfolio](https://me.vinaykr.workers.dev/)
 
 
 ![TypeScript](https://img.shields.io/badge/-TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)
