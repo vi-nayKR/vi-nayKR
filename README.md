@@ -9,9 +9,9 @@
   
 🚀 **Passionate about agentic coding, building architecture, and software**
   
-💼 Know about my experiences [here](https://drive.google.com/file/d/1vbbBNqq3YrFkcJ0VWUy3utkPhIQTx1rT/view?usp=sharing)
+💼 Know about my experiences [here](https://drive.google.com/file/d/1eIxgGrZghc3T94O_oQM_tdck3X2ZRO5N/view?usp=sharing)
 
-🌐 **Check out my portfolio** → [portfolio](https://me.vinaykr.workers.dev/)
+🌐 **Check out my portfolio** → [portfolio]([https://me.vinaykr.workers.dev/](https://vinay-portfolio-ng.pages.dev))
 
 
 ![TypeScript](https://img.shields.io/badge/-TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)
