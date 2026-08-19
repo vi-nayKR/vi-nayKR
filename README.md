@@ -35,11 +35,11 @@ Senior GenAI & Applied AI Systems Engineer with **3+ years of enterprise experie
 
 ---
 
-## 🌟 Pinned Production Projects
+## 🌟 Featured Production Repositories
 
 ### 1. [enterprise-agentic-rag-platform](https://github.com/vi-nayKR/enterprise-agentic-rag-platform)
 *Python FastAPI · LangGraph · pgvector HNSW · BM25 RRF · Model Context Protocol (MCP) · Angular 22*
-- Multi-Agent RAG engine indexing enterprise documents with **Hybrid Search (pgvector + BM25 with RRF)**, boosting recall by **34%**.
+- Multi-Agent RAG engine indexing enterprise documents with **Hybrid Search (pgvector + BM25 with RRF, k=60)**, boosting recall by **34%**.
 - Integrated **Model Context Protocol (MCP)** tool execution and automated **Ragas evaluation** (0.94 Faithfulness).
 - Non-blocking SSE token streaming with real-time markdown citations directly to Angular 22 Signals.
 
@@ -49,10 +49,15 @@ Senior GenAI & Applied AI Systems Engineer with **3+ years of enterprise experie
 - Local quantized 8B model serving via **vLLM with PagedAttention and continuous batching**, cutting cloud API costs by **60%**.
 - Automated 4-bit QLoRA fine-tuning pipeline using Unsloth on domain-specific compliance datasets.
 
-### 3. [medha-distributed-engine](https://github.com/vi-nayKR/medha-distributed-engine)
-*Go · PostgreSQL/PostGIS · Redis · k3s · Argo CD GitOps · Cloudflare Tunnel*
-- Independent distributed backend with **21 bounded microservices, ~200 REST endpoints**, load-tested to **500 RPS (p95 < 85ms)**.
-- PostGIS proximity search using `ST_DWithin` over GIST spatial indexing with distance-ordered keyset pagination.
+### 3. [fastapi-genai-agent-patterns](https://github.com/vi-nayKR/fastapi-genai-agent-patterns)
+*Python 3.12 · LangGraph · OpenTelemetry · MCP Tool Server · Human-in-the-Loop*
+- Production reference architecture for stateful multi-agent supervisor graphs with human-in-the-loop validation checkpoints.
+- Custom Model Context Protocol (MCP) server for enterprise SQL generation and tool-calling execution.
+
+### 4. [Portfolio-Ng](https://github.com/vi-nayKR/Portfolio-Ng)
+*Angular 22 Signals · Vite · Tailwind CSS · Cloudflare Workers*
+- Production portfolio featuring dark/light interactive resume, reactive forms demo, and 3D canvas visuals.
+- Live deployment: [portfolio.vinaykr.workers.dev](https://portfolio.vinaykr.workers.dev/)
 
 ---
 
