@@ -43,34 +43,36 @@ Senior GenAI & Applied AI Systems Engineer with **3+ years of enterprise experie
 - Integrated **Model Context Protocol (MCP)** tool execution and automated **Ragas evaluation** (0.94 Faithfulness).
 - Non-blocking SSE token streaming with real-time markdown citations directly to Angular 22 Signals.
 
-### 2. [medha-platform-api](https://github.com/vi-nayKR/medha-platform-api)
-*Go (chi) · PostgreSQL 17 + PostGIS · Redis 8.10 Pub/Sub · SeaweedFS · 500 RPS Scale Proof*
+### 2. [llm-observability-eval-platform](https://github.com/vi-nayKR/llm-observability-eval-platform)
+*FastAPI · OpenTelemetry · OpenInference · Ragas 0.2 Triad · DeepEval · CI/CD Gating*
+- Enterprise MLOps platform capturing hierarchical **OpenTelemetry trace spans** across agent hierarchies with **<0.08ms overhead** and 20,000+ traces/s throughput.
+- Automated quality evaluation via the **Ragas Evaluation Triad** (Faithfulness, Answer Relevance, Context Precision) with CI/CD regression gating ($\Delta \text{Score} < -0.05 \implies \text{Exit Code } 1$).
+- Real-time token cost calculation, hourly budget capping ($50.00), and tail latency drift tracking ($p50, p95, p99$).
+
+### 3. [multimodal-document-intelligence](https://github.com/vi-nayKR/multimodal-document-intelligence)
+*Vision LLM (GPT-4o / Qwen2-VL) · Pydantic v2 · Docling · Spatial Layout OCR · Grounding Shield*
+- Spatial layout analysis normalizing multi-page PDF bounding coordinates into unit geometries $[0.0, 1.0]$ for multimodal Vision LLMs.
+- Enforced **100% strict Pydantic v2 domain schemas** and 2D table matrix reconstruction with automated arithmetic line-item validation.
+- Eliminated generative hallucinations via a **deterministic spatial OCR grounding shield** cross-verifying extracted scalar tokens against source OCR with 1.000 precision.
+
+### 4. [local-llm-inference-gateway](https://github.com/vi-nayKR/local-llm-inference-gateway)
+*FastAPI · vLLM PagedAttention · Redis 8.10 Vector Search · Unsloth 4-bit QLoRA · Docker*
+- High-throughput inference gateway with **Redis 8 vector semantic caching (<5ms latency)** for recurring prompts ($\text{Cosine Sim} \ge 0.90$).
+- Local quantized 8B model serving via **vLLM with PagedAttention and continuous batching**, cutting cloud API costs by **60%**.
+- Automated **4-bit QLoRA fine-tuning pipeline** using Unsloth on domain-specific compliance instruction datasets with NeMo Guardrails.
+
+### 5. [medha-platform-api](https://github.com/vi-nayKR/medha-platform-api)
+*Go (chi) · PostgreSQL 17 + PostGIS · Redis 8.10 Pub/Sub · SeaweedFS S3 · 500 RPS Scale Proof*
 - High-throughput domain-driven Go backend featuring **21 strictly isolated bounded contexts** and **50 automated SQL migrations**.
 - **PostGIS Geospatial Engine (`ST_DWithin` + GIST Indexing)** executing proximity discovery in $<15\text{ms}$.
 - Distributed real-time **WebSocket messaging fan-out via Redis 8 Pub/Sub backplane**.
 - Load-tested under sustained distributed concurrency at **500 RPS with 100% success rate (p95 latency <85ms)**.
 
-### 3. [local-llm-inference-gateway](https://github.com/vi-nayKR/local-llm-inference-gateway)
-*FastAPI · vLLM PagedAttention · Redis 8 Semantic Cache · Unsloth 4-bit LoRA · Docker*
-- High-throughput inference gateway with **Redis 8 vector semantic caching (<5ms latency)** for recurring prompts.
-- Local quantized 8B model serving via **vLLM with PagedAttention and continuous batching**, cutting cloud API costs by **60%**.
-- Automated 4-bit QLoRA fine-tuning pipeline using Unsloth on domain-specific compliance datasets.
-
-### 4. [fastapi-genai-agent-patterns](https://github.com/vi-nayKR/fastapi-genai-agent-patterns)
-*Python 3.12 · LangGraph · OpenTelemetry · MCP Tool Server · Human-in-the-Loop*
-- Production reference architecture for stateful multi-agent supervisor graphs with human-in-the-loop validation checkpoints.
-- Custom Model Context Protocol (MCP) server for enterprise SQL generation and tool-calling execution.
-
-### 5. [medha-platform-infra](https://github.com/vi-nayKR/medha-platform-infra)
-*Kubernetes (k3s) · Argo CD GitOps · Cloudflare Zero Trust Tunnels · Terraform · SeaweedFS*
+### 6. [medha-platform-infra](https://github.com/vi-nayKR/medha-platform-infra)
+*Kubernetes (k3s) · Argo CD GitOps · Cloudflare Zero Trust Tunnels · Terraform · SeaweedFS S3*
 - Declarative GitOps infrastructure managing staging and production cluster overlays with **Argo CD pull-reconciliation**.
-- **Zero Inbound Open Ports** perimeter using outbound Cloudflare Tunnels (`cloudflared`) and default-deny NetworkPolicies.
+- **Zero Inbound Open Ports** perimeter using outbound Cloudflare Zero Trust Tunnels (`cloudflared`) and default-deny NetworkPolicies.
 - High-performance distributed object storage topology using **SeaweedFS S3** with direct presigned client uploads.
-
-### 6. [Portfolio-Ng](https://github.com/vi-nayKR/Portfolio-Ng)
-*Angular 22 Signals · Three.js 3D GenAI Space · Vite · Tailwind CSS · Cloudflare Workers*
-- Production portfolio featuring **interactive 3D GenAI Latent Vector Space (Three.js)**, Times New Roman resume view, and dark/light modes.
-- Live deployment: [portfolio.vinaykr.workers.dev](https://portfolio.vinaykr.workers.dev/)
 
 ---
 
