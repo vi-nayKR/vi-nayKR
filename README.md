@@ -6,7 +6,7 @@ Bengaluru, India · Open to SRE, platform engineering, and production engineerin
 
 [Portfolio](https://portfolio.vinaykr.workers.dev) · [LinkedIn](https://linkedin.com/in/vi-naykr) · [Email](mailto:vinayravindranatha@gmail.com)
 
-I am a software engineer with 3+ years of enterprise experience delivering and debugging production-facing software across fintech and regulated gaming. I am now specializing in site reliability engineering: Linux operations, observable services, failure-aware delivery, and automation that makes systems easier to operate.
+I am a software engineer with nearly three years of experience delivering and debugging production-facing software across fintech and regulated gaming. I am now specializing in site reliability engineering: Linux operations, observable services, failure-aware delivery, and automation that makes systems easier to operate.
 
 My public work follows an evidence-first rule: claims should be traceable to source, tests, CI, or a clearly labeled lab result. Independent projects are not presented as employer production experience.
 
