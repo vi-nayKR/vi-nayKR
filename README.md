@@ -58,6 +58,6 @@ Professional work spans fintech and regulated gaming. Public AI repositories are
 
 B.E. Computer Science, **CGPA 8.65/10**. Co-author of the IEEE paper [Data Visualisation of Time-Tradable Assets Using Machine Learning](https://ieeexplore.ieee.org/document/10275962).
 
-Three role-specific resumes are available on the [portfolio resume section](https://portfolio.vinaykr.workers.dev/#resume).
+My current resume is available through the [portfolio profile section](https://portfolio.vinaykr.workers.dev/#resume).
 
 <sub>Terminal-style presentation inspired by <a href="https://github.com/Andrew6rant">Andrew Grant's profile</a>; portrait and content are original to this profile.</sub>
