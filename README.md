@@ -18,7 +18,7 @@ My independent work applies that foundation to agent workflows, retrieval patter
 
 | Repository | Evidence |
 | --- | --- |
-| [fastapi-genai-agent-patterns](https://github.com/vi-nayKR/fastapi-genai-agent-patterns) | Python/FastAPI reference implementation with typed LangGraph routing, human approval, SSE, Redis caching, OpenTelemetry, and deterministic tests. Default workers are deterministic, so this demonstrates workflow control rather than live-model quality. |
+| [fastapi-genai-agent-patterns](https://github.com/vi-nayKR/fastapi-genai-agent-patterns) | Flagship Applied AI reference implementation: typed LangGraph routing, real model provider mode, structured outputs, hybrid retrieval (BM25 + dense semantic hash with RRF), reproducible evaluation benchmarks (30-case suite, zero unauthorized mutations), OpenTelemetry, and deterministic tests. |
 | [medha-platform-api](https://github.com/vi-nayKR/medha-platform-api) | Independent Go backend using PostgreSQL/PostGIS, Redis, authentication, WebSockets, and health checks. |
 | [homelab-sre-observability](https://github.com/vi-nayKR/homelab-sre-observability) | Bounded Go/Prometheus observability lab with SLOs, alerts, probes, dashboards, and runbooks. |
 
