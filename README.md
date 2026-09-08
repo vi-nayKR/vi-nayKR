@@ -3,7 +3,7 @@
   <h1>Vinay K R</h1>
   <p><strong>Software engineer · Bengaluru, India</strong></p>
   <a href="https://portfolio.vinaykr.workers.dev/">
-    <img src="./vinay-ascii-portrait.png" width="280" alt="Vinay K R — ASCII portrait with orange accents" />
+    <img src="./vinay-ascii-portrait.png" width="280" alt="Vinay K R — black-and-white ASCII character portrait" />
   </a>
   <p><strong>I build the interface, the API, and the systems that keep them useful.</strong></p>
   <p><samp>Angular · TypeScript · Go · Python · Linux</samp></p>
