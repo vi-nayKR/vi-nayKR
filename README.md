@@ -9,13 +9,15 @@ I focus on Applied AI systems with nearly three years of professional experience
 
 My independent work applies that foundation to agent workflows, retrieval patterns, evaluation, and observability. Employment experience and personal projects are described separately.
 
-## Pinned work
+## Featured Applied AI & Engineering Work
 
 | Repository | Evidence |
 | --- | --- |
-| [fastapi-genai-agent-patterns](https://github.com/vi-nayKR/fastapi-genai-agent-patterns) | Flagship Applied AI reference implementation: typed LangGraph routing, real model provider mode, structured outputs, hybrid retrieval (BM25 + dense semantic hash with RRF), reproducible evaluation benchmarks (30-case suite, zero unauthorized mutations), OpenTelemetry, and deterministic tests. |
-| [medha-platform-api](https://github.com/vi-nayKR/medha-platform-api) | Independent Go backend using PostgreSQL/PostGIS, Redis, authentication, WebSockets, and health checks. |
-| [homelab-sre-observability](https://github.com/vi-nayKR/homelab-sre-observability) | Bounded Go/Prometheus observability lab with SLOs, alerts, probes, dashboards, and runbooks. |
+| [fastapi-genai-agent-patterns](https://github.com/vi-nayKR/fastapi-genai-agent-patterns) | Flagship Applied AI reference implementation: typed LangGraph routing, supervisor pattern, human-in-the-loop checkpoints, structured outputs, Redis 8 exact/semantic caching, SSE streaming, and OpenTelemetry. |
+| [multimodal-document-intelligence](https://github.com/vi-nayKR/multimodal-document-intelligence) | Enterprise Vision AI extraction engine: spatial layout analysis, Docling & Vision LLMs, 2D table reconstruction, strict Pydantic schemas, and deterministic anti-hallucination grounding against source OCR tokens. |
+| [Data-Visualization-Of-Time-Tradable-Assets-Using-ML](https://github.com/vi-nayKR/Data-Visualization-Of-Time-Tradable-Assets-Using-ML) | Market data terminal & ML model comparison (IEEE co-authored research): Angular 22 & FastAPI architecture, Plotly technical indicators (SMA, EMA, RSI, MACD), SVR, Decision Trees, and LSTM time-series pipelines. |
+| [enterprise-agentic-rag-platform](https://github.com/vi-nayKR/enterprise-agentic-rag-platform) | Hybrid retrieval system: in-memory vector + BM25-like search, Reciprocal Rank Fusion (RRF), heuristic reranking, query rewriting, and citation verification. |
+| [medha-platform-api](https://github.com/vi-nayKR/medha-platform-api) | Domain-driven Go backend: PostgreSQL/PostGIS, Redis, authentication, WebSockets, and health checks. |
 
 ## Professional foundation
 
