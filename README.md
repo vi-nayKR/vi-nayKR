@@ -9,7 +9,7 @@
 
 </div>
 
-## `// SIGNAL`
+
 
 I build AI systems that show their work: every extracted value links back to its
 source, uncertain cases go to a person, and the backend underneath is boring and reliable.
@@ -42,16 +42,11 @@ Go service with Prometheus SLOs, Grafana dashboards, Alertmanager and black-box 
 
 <img src="assets/stack.svg" alt="Skills" width="100%">
 
-## `// EVIDENCE`
 
-| Claim | Proof |
-| --- | --- |
-| Tested, not demoed | CI and automated tests on every featured repo |
-| Honest about limits | Each README lists what is measured and what is not |
 | Eval discipline | Deterministic fixtures today; **live-model held-out eval for ReconcileAI is in progress** |
 | Real product work | Co-built the backend at Medha Innovations — [architecture write-up](https://github.com/medha-innovations/engineering-showcase) |
 
-## `// BACKGROUND`
+
 
 Medha Innovations · digital-asset custody · regulated gaming.
 Co-author, [*Data Visualisation of Time Tradable Assets Using Machine Learning*](https://doi.org/10.1109/NMITCON58196.2023.10275962), IEEE NMITCON 2023.
