@@ -1,47 +1,63 @@
-# Vinay K R
+<div align="center">
 
-**Applied AI Engineer · Full-Stack & Backend Systems · Bengaluru**
+<img src="assets/hud.svg" alt="Vinay K R — Applied AI Engineer. Python, TypeScript, Go. Bengaluru." width="100%">
 
-I build AI-assisted workflows with source evidence, explicit business rules,
-and human review. My work spans Python AI services, TypeScript interfaces,
-and Go backends.
+[**Portfolio**](https://portfolio.vinaykr.workers.dev/) &nbsp;·&nbsp;
+[**Résumé**](https://portfolio.vinaykr.workers.dev/resumes/vinay_kr_resume_ats.pdf) &nbsp;·&nbsp;
+[**LinkedIn**](https://linkedin.com/in/vi-naykr) &nbsp;·&nbsp;
+[**Email**](mailto:vinayravindranatha@gmail.com)
 
-[Portfolio](https://portfolio.vinaykr.workers.dev/) ·
-[Resume](https://portfolio.vinaykr.workers.dev/resumes/vinay_kr_resume_ats.pdf) ·
-[LinkedIn](https://linkedin.com/in/vi-naykr) ·
-[Email](mailto:vinayravindranatha@gmail.com)
+</div>
 
-## Selected work
+## `// SIGNAL`
 
-### [ReconcileAI](https://github.com/vi-nayKR/multimodal-document-intelligence)
-Invoice and purchase-order review with typed extraction, decimal-based
-reconciliation, source evidence, and correction history.
-Public prototype with deterministic tests and a synthetic evaluation dataset;
-live-model quality is not yet measured.
+I build AI systems that show their work: every extracted value links back to its
+source, uncertain cases go to a person, and the backend underneath is boring and reliable.
 
-### [Medha Platform API](https://github.com/vi-nayKR/medha-platform-api)
-Public Go backend reference covering transactions, authorization, geospatial
-discovery, and real-time messaging. Includes snapshot provenance and
-co-contributor attribution.
-[Product architecture](https://github.com/medha-innovations/engineering-showcase).
+<table>
+<tr>
+<td width="33%" valign="top">
 
-### [FastAPI Agent Patterns](https://github.com/vi-nayKR/fastapi-genai-agent-patterns)
-Typed agent workflows with human approval, streaming, Redis caching,
-and OpenTelemetry. Includes a fixture evaluation and documented requirements
-for production deployment.
+**[ReconcileAI](https://github.com/vi-nayKR/multimodal-document-intelligence)**<br>
+Invoice ⇄ PO review. Typed extraction, decimal reconciliation, source evidence, correction history.<br><br>
+`Python` `Docling` `Gemini` `FastAPI`
 
-## Engineering focus
+</td>
+<td width="33%" valign="top">
 
-- AI: structured extraction, retrieval, evaluation, and human review.
-- Product: Python/FastAPI, TypeScript/Angular/React, and Go.
-- Systems: PostgreSQL, Redis, API contracts, and authorization.
-- Delivery: automated tests, CI, observability, and failure recovery.
+**[FastAPI Agent Patterns](https://github.com/vi-nayKR/fastapi-genai-agent-patterns)**<br>
+Agent workflows with human approval, SSE streaming, Redis caching, OpenTelemetry and a fixture eval.<br><br>
+`LangGraph` `FastAPI` `Redis` `OTel`
 
-My professional background spans Medha Innovations, digital-asset custody,
-and regulated gaming. The portfolio contains my experience and the
-boundaries between professional work and public reference projects.
+</td>
+<td width="33%" valign="top">
 
-Co-author of [Data Visualisation of Time Tradable Assets Using Machine Learning
-— IEEE NMITCON 2023](https://doi.org/10.1109/NMITCON58196.2023.10275962).
+**[Homelab SRE Observability](https://github.com/vi-nayKR/homelab-sre-observability)**<br>
+Go service with Prometheus SLOs, Grafana dashboards, Alertmanager and black-box probes.<br><br>
+`Go` `Prometheus` `Grafana`
 
-I am interested in Applied AI and AI product engineering opportunities.
+</td>
+</tr>
+</table>
+
+<img src="assets/stack.svg" alt="Skills" width="100%">
+
+## `// EVIDENCE`
+
+| Claim | Proof |
+| --- | --- |
+| Tested, not demoed | CI and automated tests on every featured repo |
+| Honest about limits | Each README lists what is measured and what is not |
+| Eval discipline | Deterministic fixtures today; **live-model held-out eval for ReconcileAI is in progress** |
+| Real product work | Co-built the backend at Medha Innovations — [architecture write-up](https://github.com/medha-innovations/engineering-showcase) |
+
+## `// BACKGROUND`
+
+Medha Innovations · digital-asset custody · regulated gaming.
+Co-author, [*Data Visualisation of Time Tradable Assets Using Machine Learning*](https://doi.org/10.1109/NMITCON58196.2023.10275962), IEEE NMITCON 2023.
+
+<div align="center">
+
+`open to applied AI & AI product engineering roles` &nbsp;·&nbsp; [say hi](mailto:vinayravindranatha@gmail.com)
+
+</div>
