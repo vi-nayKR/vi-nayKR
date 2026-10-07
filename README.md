@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="assets/hud.svg" alt="Vinay K R — Applied AI Engineer. Python, TypeScript, Go. Bengaluru." width="100%">
+<img src="assets/hud.svg?v=2" alt="Vinay K R — Applied AI Engineer. Python, TypeScript, Go. Bengaluru." width="100%">
 
 [**Portfolio**](https://portfolio.vinaykr.workers.dev/) &nbsp;·&nbsp;
 [**Résumé**](https://portfolio.vinaykr.workers.dev/resumes/vinay_kr_resume_ats.pdf) &nbsp;·&nbsp;
