@@ -84,8 +84,8 @@
     <text x="704" y="346" class="h">// STATUS</text>
     <circle class="blink" cx="710" cy="374" r="5" fill="#2bff88"/>
     <text x="724" y="378" class="v">Open to Applied AI roles</text>
-    <text x="704" y="404" class="k">PORTFOLIO</text><text x="790" y="404" class="v">vinaykr.workers.dev</text>
-    <text x="704" y="428" class="k">CONTACT</text><text x="790" y="428" class="v">github.com/vi-nayKR</text>
+    <text x="704" y="404" class="k">SITE</text><text x="752" y="404" class="v" font-size="12">portfolio.vinaykr.workers.dev</text>
+    <text x="704" y="428" class="k">CODE</text><text x="752" y="428" class="v" font-size="12">github.com/vi-nayKR</text>
   </g>
 
   <!-- side ticks -->
