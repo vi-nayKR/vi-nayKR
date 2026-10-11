@@ -1,0 +1,301 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 372" width="1000" height="372" role="img" aria-label="Medha Innovations proof of work: 754 commits across 10 private repositories, Feb 2026 to Oct 2026">
+<title>Medha Innovations · proof of work</title>
+<defs><style>
+text{font-family:'JetBrains Mono','Cascadia Code',Consolas,'Courier New',monospace}
+.row{fill:#00e5ff;font-size:11px;letter-spacing:3px}
+.big{fill:#e6edf3;font-size:26px;font-weight:700}
+.lab{fill:#8b949e;font-size:11px;letter-spacing:1px}
+.t{fill:#e6edf3;font-size:12px}
+.m{fill:#8b949e;font-size:11px}
+.plate{fill:#161b22;stroke:#30363d}
+.br{stroke:#00e5ff;stroke-width:2;fill:none}
+.dot{fill:#2bff88;animation:p 2.4s ease-in-out infinite}
+@keyframes p{0%,100%{opacity:.35}50%{opacity:1}}
+</style></defs>
+<rect width="1000" height="372" fill="#0d1117"/>
+<text x="20" y="26" class="row">// PROOF OF WORK · MEDHA INNOVATIONS</text>
+<circle cx="958" cy="22" r="4" class="dot"/><text x="946" y="26" class="m" text-anchor="end">founding engineer</text>
+<g transform="translate(20,40)"><rect class="plate" width="232" height="64" rx="3"/><path class="br" d="M0 12V0H12M220 64H232V52"/><text x="16" y="34" class="big">754</text><text x="16" y="53" class="lab">COMMITS AUTHORED</text></g>
+<g transform="translate(262,40)"><rect class="plate" width="232" height="64" rx="3"/><path class="br" d="M0 12V0H12M220 64H232V52"/><text x="16" y="34" class="big">10</text><text x="16" y="53" class="lab">PRIVATE REPOS</text></g>
+<g transform="translate(504,40)"><rect class="plate" width="232" height="64" rx="3"/><path class="br" d="M0 12V0H12M220 64H232V52"/><text x="16" y="34" class="big">89</text><text x="16" y="53" class="lab">DAYS WITH COMMITS</text></g>
+<g transform="translate(746,40)"><rect class="plate" width="232" height="64" rx="3"/><path class="br" d="M0 12V0H12M220 64H232V52"/><text x="16" y="34" class="big">Feb–Oct 2026</text><text x="16" y="53" class="lab">ACTIVE WINDOW</text></g>
+<text x="20" y="128" class="row">// COMMITS PER DAY</text>
+<text x="20" y="144" class="m">Mar</text>
+<text x="100" y="144" class="m">Apr</text>
+<text x="164" y="144" class="m">May</text>
+<text x="244" y="144" class="m">Jun</text>
+<text x="308" y="144" class="m">Jul</text>
+<text x="372" y="144" class="m">Aug</text>
+<text x="452" y="144" class="m">Sep</text>
+<text x="516" y="144" class="m">Oct</text>
+<rect x="20" y="150" width="13" height="13" rx="2" fill="#161b22"><title>23 Feb 2026: 0 commits</title></rect>
+<rect x="20" y="166" width="13" height="13" rx="2" fill="#161b22"><title>24 Feb 2026: 0 commits</title></rect>
+<rect x="20" y="182" width="13" height="13" rx="2" fill="#161b22"><title>25 Feb 2026: 0 commits</title></rect>
+<rect x="20" y="198" width="13" height="13" rx="2" fill="#161b22"><title>26 Feb 2026: 0 commits</title></rect>
+<rect x="20" y="214" width="13" height="13" rx="2" fill="#161b22"><title>27 Feb 2026: 0 commits</title></rect>
+<rect x="20" y="230" width="13" height="13" rx="2" fill="#00c2dc"><title>28 Feb 2026: 6 commits</title></rect>
+<rect x="20" y="246" width="13" height="13" rx="2" fill="#161b22"><title>01 Mar 2026: 0 commits</title></rect>
+<rect x="36" y="150" width="13" height="13" rx="2" fill="#0b4a55"><title>02 Mar 2026: 2 commits</title></rect>
+<rect x="36" y="166" width="13" height="13" rx="2" fill="#161b22"><title>03 Mar 2026: 0 commits</title></rect>
+<rect x="36" y="182" width="13" height="13" rx="2" fill="#161b22"><title>04 Mar 2026: 0 commits</title></rect>
+<rect x="36" y="198" width="13" height="13" rx="2" fill="#161b22"><title>05 Mar 2026: 0 commits</title></rect>
+<rect x="36" y="214" width="13" height="13" rx="2" fill="#161b22"><title>06 Mar 2026: 0 commits</title></rect>
+<rect x="36" y="230" width="13" height="13" rx="2" fill="#161b22"><title>07 Mar 2026: 0 commits</title></rect>
+<rect x="36" y="246" width="13" height="13" rx="2" fill="#161b22"><title>08 Mar 2026: 0 commits</title></rect>
+<rect x="52" y="150" width="13" height="13" rx="2" fill="#0b4a55"><title>09 Mar 2026: 2 commits</title></rect>
+<rect x="52" y="166" width="13" height="13" rx="2" fill="#161b22"><title>10 Mar 2026: 0 commits</title></rect>
+<rect x="52" y="182" width="13" height="13" rx="2" fill="#00849a"><title>11 Mar 2026: 4 commits</title></rect>
+<rect x="52" y="198" width="13" height="13" rx="2" fill="#00849a"><title>12 Mar 2026: 5 commits</title></rect>
+<rect x="52" y="214" width="13" height="13" rx="2" fill="#00849a"><title>13 Mar 2026: 3 commits</title></rect>
+<rect x="52" y="230" width="13" height="13" rx="2" fill="#161b22"><title>14 Mar 2026: 0 commits</title></rect>
+<rect x="52" y="246" width="13" height="13" rx="2" fill="#0b4a55"><title>15 Mar 2026: 1 commits</title></rect>
+<rect x="68" y="150" width="13" height="13" rx="2" fill="#161b22"><title>16 Mar 2026: 0 commits</title></rect>
+<rect x="68" y="166" width="13" height="13" rx="2" fill="#161b22"><title>17 Mar 2026: 0 commits</title></rect>
+<rect x="68" y="182" width="13" height="13" rx="2" fill="#0b4a55"><title>18 Mar 2026: 1 commits</title></rect>
+<rect x="68" y="198" width="13" height="13" rx="2" fill="#00849a"><title>19 Mar 2026: 4 commits</title></rect>
+<rect x="68" y="214" width="13" height="13" rx="2" fill="#00c2dc"><title>20 Mar 2026: 6 commits</title></rect>
+<rect x="68" y="230" width="13" height="13" rx="2" fill="#00c2dc"><title>21 Mar 2026: 6 commits</title></rect>
+<rect x="68" y="246" width="13" height="13" rx="2" fill="#161b22"><title>22 Mar 2026: 0 commits</title></rect>
+<rect x="84" y="150" width="13" height="13" rx="2" fill="#161b22"><title>23 Mar 2026: 0 commits</title></rect>
+<rect x="84" y="166" width="13" height="13" rx="2" fill="#0b4a55"><title>24 Mar 2026: 2 commits</title></rect>
+<rect x="84" y="182" width="13" height="13" rx="2" fill="#00849a"><title>25 Mar 2026: 5 commits</title></rect>
+<rect x="84" y="198" width="13" height="13" rx="2" fill="#161b22"><title>26 Mar 2026: 0 commits</title></rect>
+<rect x="84" y="214" width="13" height="13" rx="2" fill="#0b4a55"><title>27 Mar 2026: 1 commits</title></rect>
+<rect x="84" y="230" width="13" height="13" rx="2" fill="#0b4a55"><title>28 Mar 2026: 2 commits</title></rect>
+<rect x="84" y="246" width="13" height="13" rx="2" fill="#00e5ff"><title>29 Mar 2026: 20 commits</title></rect>
+<rect x="100" y="150" width="13" height="13" rx="2" fill="#00c2dc"><title>30 Mar 2026: 7 commits</title></rect>
+<rect x="100" y="166" width="13" height="13" rx="2" fill="#161b22"><title>31 Mar 2026: 0 commits</title></rect>
+<rect x="100" y="182" width="13" height="13" rx="2" fill="#00c2dc"><title>01 Apr 2026: 7 commits</title></rect>
+<rect x="100" y="198" width="13" height="13" rx="2" fill="#161b22"><title>02 Apr 2026: 0 commits</title></rect>
+<rect x="100" y="214" width="13" height="13" rx="2" fill="#161b22"><title>03 Apr 2026: 0 commits</title></rect>
+<rect x="100" y="230" width="13" height="13" rx="2" fill="#161b22"><title>04 Apr 2026: 0 commits</title></rect>
+<rect x="100" y="246" width="13" height="13" rx="2" fill="#161b22"><title>05 Apr 2026: 0 commits</title></rect>
+<rect x="116" y="150" width="13" height="13" rx="2" fill="#0b4a55"><title>06 Apr 2026: 1 commits</title></rect>
+<rect x="116" y="166" width="13" height="13" rx="2" fill="#161b22"><title>07 Apr 2026: 0 commits</title></rect>
+<rect x="116" y="182" width="13" height="13" rx="2" fill="#161b22"><title>08 Apr 2026: 0 commits</title></rect>
+<rect x="116" y="198" width="13" height="13" rx="2" fill="#161b22"><title>09 Apr 2026: 0 commits</title></rect>
+<rect x="116" y="214" width="13" height="13" rx="2" fill="#161b22"><title>10 Apr 2026: 0 commits</title></rect>
+<rect x="116" y="230" width="13" height="13" rx="2" fill="#00849a"><title>11 Apr 2026: 3 commits</title></rect>
+<rect x="116" y="246" width="13" height="13" rx="2" fill="#161b22"><title>12 Apr 2026: 0 commits</title></rect>
+<rect x="132" y="150" width="13" height="13" rx="2" fill="#161b22"><title>13 Apr 2026: 0 commits</title></rect>
+<rect x="132" y="166" width="13" height="13" rx="2" fill="#0b4a55"><title>14 Apr 2026: 1 commits</title></rect>
+<rect x="132" y="182" width="13" height="13" rx="2" fill="#00849a"><title>15 Apr 2026: 5 commits</title></rect>
+<rect x="132" y="198" width="13" height="13" rx="2" fill="#00c2dc"><title>16 Apr 2026: 8 commits</title></rect>
+<rect x="132" y="214" width="13" height="13" rx="2" fill="#00e5ff"><title>17 Apr 2026: 13 commits</title></rect>
+<rect x="132" y="230" width="13" height="13" rx="2" fill="#0b4a55"><title>18 Apr 2026: 2 commits</title></rect>
+<rect x="132" y="246" width="13" height="13" rx="2" fill="#00e5ff"><title>19 Apr 2026: 11 commits</title></rect>
+<rect x="148" y="150" width="13" height="13" rx="2" fill="#00c2dc"><title>20 Apr 2026: 8 commits</title></rect>
+<rect x="148" y="166" width="13" height="13" rx="2" fill="#161b22"><title>21 Apr 2026: 0 commits</title></rect>
+<rect x="148" y="182" width="13" height="13" rx="2" fill="#161b22"><title>22 Apr 2026: 0 commits</title></rect>
+<rect x="148" y="198" width="13" height="13" rx="2" fill="#00e5ff"><title>23 Apr 2026: 11 commits</title></rect>
+<rect x="148" y="214" width="13" height="13" rx="2" fill="#0b4a55"><title>24 Apr 2026: 2 commits</title></rect>
+<rect x="148" y="230" width="13" height="13" rx="2" fill="#00c2dc"><title>25 Apr 2026: 7 commits</title></rect>
+<rect x="148" y="246" width="13" height="13" rx="2" fill="#161b22"><title>26 Apr 2026: 0 commits</title></rect>
+<rect x="164" y="150" width="13" height="13" rx="2" fill="#161b22"><title>27 Apr 2026: 0 commits</title></rect>
+<rect x="164" y="166" width="13" height="13" rx="2" fill="#161b22"><title>28 Apr 2026: 0 commits</title></rect>
+<rect x="164" y="182" width="13" height="13" rx="2" fill="#161b22"><title>29 Apr 2026: 0 commits</title></rect>
+<rect x="164" y="198" width="13" height="13" rx="2" fill="#161b22"><title>30 Apr 2026: 0 commits</title></rect>
+<rect x="164" y="214" width="13" height="13" rx="2" fill="#161b22"><title>01 May 2026: 0 commits</title></rect>
+<rect x="164" y="230" width="13" height="13" rx="2" fill="#161b22"><title>02 May 2026: 0 commits</title></rect>
+<rect x="164" y="246" width="13" height="13" rx="2" fill="#161b22"><title>03 May 2026: 0 commits</title></rect>
+<rect x="180" y="150" width="13" height="13" rx="2" fill="#161b22"><title>04 May 2026: 0 commits</title></rect>
+<rect x="180" y="166" width="13" height="13" rx="2" fill="#0b4a55"><title>05 May 2026: 1 commits</title></rect>
+<rect x="180" y="182" width="13" height="13" rx="2" fill="#0b4a55"><title>06 May 2026: 1 commits</title></rect>
+<rect x="180" y="198" width="13" height="13" rx="2" fill="#00849a"><title>07 May 2026: 3 commits</title></rect>
+<rect x="180" y="214" width="13" height="13" rx="2" fill="#00849a"><title>08 May 2026: 3 commits</title></rect>
+<rect x="180" y="230" width="13" height="13" rx="2" fill="#00849a"><title>09 May 2026: 3 commits</title></rect>
+<rect x="180" y="246" width="13" height="13" rx="2" fill="#161b22"><title>10 May 2026: 0 commits</title></rect>
+<rect x="196" y="150" width="13" height="13" rx="2" fill="#161b22"><title>11 May 2026: 0 commits</title></rect>
+<rect x="196" y="166" width="13" height="13" rx="2" fill="#00e5ff"><title>12 May 2026: 12 commits</title></rect>
+<rect x="196" y="182" width="13" height="13" rx="2" fill="#161b22"><title>13 May 2026: 0 commits</title></rect>
+<rect x="196" y="198" width="13" height="13" rx="2" fill="#00e5ff"><title>14 May 2026: 19 commits</title></rect>
+<rect x="196" y="214" width="13" height="13" rx="2" fill="#00c2dc"><title>15 May 2026: 9 commits</title></rect>
+<rect x="196" y="230" width="13" height="13" rx="2" fill="#161b22"><title>16 May 2026: 0 commits</title></rect>
+<rect x="196" y="246" width="13" height="13" rx="2" fill="#161b22"><title>17 May 2026: 0 commits</title></rect>
+<rect x="212" y="150" width="13" height="13" rx="2" fill="#161b22"><title>18 May 2026: 0 commits</title></rect>
+<rect x="212" y="166" width="13" height="13" rx="2" fill="#00c2dc"><title>19 May 2026: 7 commits</title></rect>
+<rect x="212" y="182" width="13" height="13" rx="2" fill="#00849a"><title>20 May 2026: 3 commits</title></rect>
+<rect x="212" y="198" width="13" height="13" rx="2" fill="#00e5ff"><title>21 May 2026: 12 commits</title></rect>
+<rect x="212" y="214" width="13" height="13" rx="2" fill="#161b22"><title>22 May 2026: 0 commits</title></rect>
+<rect x="212" y="230" width="13" height="13" rx="2" fill="#161b22"><title>23 May 2026: 0 commits</title></rect>
+<rect x="212" y="246" width="13" height="13" rx="2" fill="#161b22"><title>24 May 2026: 0 commits</title></rect>
+<rect x="228" y="150" width="13" height="13" rx="2" fill="#00849a"><title>25 May 2026: 5 commits</title></rect>
+<rect x="228" y="166" width="13" height="13" rx="2" fill="#00c2dc"><title>26 May 2026: 6 commits</title></rect>
+<rect x="228" y="182" width="13" height="13" rx="2" fill="#00c2dc"><title>27 May 2026: 6 commits</title></rect>
+<rect x="228" y="198" width="13" height="13" rx="2" fill="#00c2dc"><title>28 May 2026: 8 commits</title></rect>
+<rect x="228" y="214" width="13" height="13" rx="2" fill="#00849a"><title>29 May 2026: 5 commits</title></rect>
+<rect x="228" y="230" width="13" height="13" rx="2" fill="#00849a"><title>30 May 2026: 3 commits</title></rect>
+<rect x="228" y="246" width="13" height="13" rx="2" fill="#161b22"><title>31 May 2026: 0 commits</title></rect>
+<rect x="244" y="150" width="13" height="13" rx="2" fill="#0b4a55"><title>01 Jun 2026: 1 commits</title></rect>
+<rect x="244" y="166" width="13" height="13" rx="2" fill="#161b22"><title>02 Jun 2026: 0 commits</title></rect>
+<rect x="244" y="182" width="13" height="13" rx="2" fill="#00c2dc"><title>03 Jun 2026: 7 commits</title></rect>
+<rect x="244" y="198" width="13" height="13" rx="2" fill="#00c2dc"><title>04 Jun 2026: 8 commits</title></rect>
+<rect x="244" y="214" width="13" height="13" rx="2" fill="#00e5ff"><title>05 Jun 2026: 12 commits</title></rect>
+<rect x="244" y="230" width="13" height="13" rx="2" fill="#0b4a55"><title>06 Jun 2026: 1 commits</title></rect>
+<rect x="244" y="246" width="13" height="13" rx="2" fill="#00c2dc"><title>07 Jun 2026: 10 commits</title></rect>
+<rect x="260" y="150" width="13" height="13" rx="2" fill="#00849a"><title>08 Jun 2026: 3 commits</title></rect>
+<rect x="260" y="166" width="13" height="13" rx="2" fill="#161b22"><title>09 Jun 2026: 0 commits</title></rect>
+<rect x="260" y="182" width="13" height="13" rx="2" fill="#0b4a55"><title>10 Jun 2026: 1 commits</title></rect>
+<rect x="260" y="198" width="13" height="13" rx="2" fill="#00849a"><title>11 Jun 2026: 5 commits</title></rect>
+<rect x="260" y="214" width="13" height="13" rx="2" fill="#0b4a55"><title>12 Jun 2026: 1 commits</title></rect>
+<rect x="260" y="230" width="13" height="13" rx="2" fill="#161b22"><title>13 Jun 2026: 0 commits</title></rect>
+<rect x="260" y="246" width="13" height="13" rx="2" fill="#161b22"><title>14 Jun 2026: 0 commits</title></rect>
+<rect x="276" y="150" width="13" height="13" rx="2" fill="#0b4a55"><title>15 Jun 2026: 2 commits</title></rect>
+<rect x="276" y="166" width="13" height="13" rx="2" fill="#00849a"><title>16 Jun 2026: 3 commits</title></rect>
+<rect x="276" y="182" width="13" height="13" rx="2" fill="#161b22"><title>17 Jun 2026: 0 commits</title></rect>
+<rect x="276" y="198" width="13" height="13" rx="2" fill="#161b22"><title>18 Jun 2026: 0 commits</title></rect>
+<rect x="276" y="214" width="13" height="13" rx="2" fill="#161b22"><title>19 Jun 2026: 0 commits</title></rect>
+<rect x="276" y="230" width="13" height="13" rx="2" fill="#161b22"><title>20 Jun 2026: 0 commits</title></rect>
+<rect x="276" y="246" width="13" height="13" rx="2" fill="#161b22"><title>21 Jun 2026: 0 commits</title></rect>
+<rect x="292" y="150" width="13" height="13" rx="2" fill="#161b22"><title>22 Jun 2026: 0 commits</title></rect>
+<rect x="292" y="166" width="13" height="13" rx="2" fill="#0b4a55"><title>23 Jun 2026: 1 commits</title></rect>
+<rect x="292" y="182" width="13" height="13" rx="2" fill="#0b4a55"><title>24 Jun 2026: 1 commits</title></rect>
+<rect x="292" y="198" width="13" height="13" rx="2" fill="#161b22"><title>25 Jun 2026: 0 commits</title></rect>
+<rect x="292" y="214" width="13" height="13" rx="2" fill="#0b4a55"><title>26 Jun 2026: 1 commits</title></rect>
+<rect x="292" y="230" width="13" height="13" rx="2" fill="#161b22"><title>27 Jun 2026: 0 commits</title></rect>
+<rect x="292" y="246" width="13" height="13" rx="2" fill="#161b22"><title>28 Jun 2026: 0 commits</title></rect>
+<rect x="308" y="150" width="13" height="13" rx="2" fill="#161b22"><title>29 Jun 2026: 0 commits</title></rect>
+<rect x="308" y="166" width="13" height="13" rx="2" fill="#161b22"><title>30 Jun 2026: 0 commits</title></rect>
+<rect x="308" y="182" width="13" height="13" rx="2" fill="#00e5ff"><title>01 Jul 2026: 11 commits</title></rect>
+<rect x="308" y="198" width="13" height="13" rx="2" fill="#161b22"><title>02 Jul 2026: 0 commits</title></rect>
+<rect x="308" y="214" width="13" height="13" rx="2" fill="#0b4a55"><title>03 Jul 2026: 2 commits</title></rect>
+<rect x="308" y="230" width="13" height="13" rx="2" fill="#161b22"><title>04 Jul 2026: 0 commits</title></rect>
+<rect x="308" y="246" width="13" height="13" rx="2" fill="#161b22"><title>05 Jul 2026: 0 commits</title></rect>
+<rect x="324" y="150" width="13" height="13" rx="2" fill="#00e5ff"><title>06 Jul 2026: 15 commits</title></rect>
+<rect x="324" y="166" width="13" height="13" rx="2" fill="#161b22"><title>07 Jul 2026: 0 commits</title></rect>
+<rect x="324" y="182" width="13" height="13" rx="2" fill="#161b22"><title>08 Jul 2026: 0 commits</title></rect>
+<rect x="324" y="198" width="13" height="13" rx="2" fill="#00e5ff"><title>09 Jul 2026: 42 commits</title></rect>
+<rect x="324" y="214" width="13" height="13" rx="2" fill="#00e5ff"><title>10 Jul 2026: 11 commits</title></rect>
+<rect x="324" y="230" width="13" height="13" rx="2" fill="#161b22"><title>11 Jul 2026: 0 commits</title></rect>
+<rect x="324" y="246" width="13" height="13" rx="2" fill="#161b22"><title>12 Jul 2026: 0 commits</title></rect>
+<rect x="340" y="150" width="13" height="13" rx="2" fill="#161b22"><title>13 Jul 2026: 0 commits</title></rect>
+<rect x="340" y="166" width="13" height="13" rx="2" fill="#161b22"><title>14 Jul 2026: 0 commits</title></rect>
+<rect x="340" y="182" width="13" height="13" rx="2" fill="#00849a"><title>15 Jul 2026: 3 commits</title></rect>
+<rect x="340" y="198" width="13" height="13" rx="2" fill="#161b22"><title>16 Jul 2026: 0 commits</title></rect>
+<rect x="340" y="214" width="13" height="13" rx="2" fill="#00e5ff"><title>17 Jul 2026: 25 commits</title></rect>
+<rect x="340" y="230" width="13" height="13" rx="2" fill="#00e5ff"><title>18 Jul 2026: 32 commits</title></rect>
+<rect x="340" y="246" width="13" height="13" rx="2" fill="#00e5ff"><title>19 Jul 2026: 49 commits</title></rect>
+<rect x="356" y="150" width="13" height="13" rx="2" fill="#00e5ff"><title>20 Jul 2026: 83 commits</title></rect>
+<rect x="356" y="166" width="13" height="13" rx="2" fill="#00e5ff"><title>21 Jul 2026: 12 commits</title></rect>
+<rect x="356" y="182" width="13" height="13" rx="2" fill="#00e5ff"><title>22 Jul 2026: 26 commits</title></rect>
+<rect x="356" y="198" width="13" height="13" rx="2" fill="#00e5ff"><title>23 Jul 2026: 15 commits</title></rect>
+<rect x="356" y="214" width="13" height="13" rx="2" fill="#161b22"><title>24 Jul 2026: 0 commits</title></rect>
+<rect x="356" y="230" width="13" height="13" rx="2" fill="#161b22"><title>25 Jul 2026: 0 commits</title></rect>
+<rect x="356" y="246" width="13" height="13" rx="2" fill="#161b22"><title>26 Jul 2026: 0 commits</title></rect>
+<rect x="372" y="150" width="13" height="13" rx="2" fill="#161b22"><title>27 Jul 2026: 0 commits</title></rect>
+<rect x="372" y="166" width="13" height="13" rx="2" fill="#161b22"><title>28 Jul 2026: 0 commits</title></rect>
+<rect x="372" y="182" width="13" height="13" rx="2" fill="#161b22"><title>29 Jul 2026: 0 commits</title></rect>
+<rect x="372" y="198" width="13" height="13" rx="2" fill="#00849a"><title>30 Jul 2026: 5 commits</title></rect>
+<rect x="372" y="214" width="13" height="13" rx="2" fill="#161b22"><title>31 Jul 2026: 0 commits</title></rect>
+<rect x="372" y="230" width="13" height="13" rx="2" fill="#161b22"><title>01 Aug 2026: 0 commits</title></rect>
+<rect x="372" y="246" width="13" height="13" rx="2" fill="#161b22"><title>02 Aug 2026: 0 commits</title></rect>
+<rect x="388" y="150" width="13" height="13" rx="2" fill="#161b22"><title>03 Aug 2026: 0 commits</title></rect>
+<rect x="388" y="166" width="13" height="13" rx="2" fill="#161b22"><title>04 Aug 2026: 0 commits</title></rect>
+<rect x="388" y="182" width="13" height="13" rx="2" fill="#161b22"><title>05 Aug 2026: 0 commits</title></rect>
+<rect x="388" y="198" width="13" height="13" rx="2" fill="#161b22"><title>06 Aug 2026: 0 commits</title></rect>
+<rect x="388" y="214" width="13" height="13" rx="2" fill="#00e5ff"><title>07 Aug 2026: 26 commits</title></rect>
+<rect x="388" y="230" width="13" height="13" rx="2" fill="#161b22"><title>08 Aug 2026: 0 commits</title></rect>
+<rect x="388" y="246" width="13" height="13" rx="2" fill="#00c2dc"><title>09 Aug 2026: 6 commits</title></rect>
+<rect x="404" y="150" width="13" height="13" rx="2" fill="#161b22"><title>10 Aug 2026: 0 commits</title></rect>
+<rect x="404" y="166" width="13" height="13" rx="2" fill="#161b22"><title>11 Aug 2026: 0 commits</title></rect>
+<rect x="404" y="182" width="13" height="13" rx="2" fill="#161b22"><title>12 Aug 2026: 0 commits</title></rect>
+<rect x="404" y="198" width="13" height="13" rx="2" fill="#161b22"><title>13 Aug 2026: 0 commits</title></rect>
+<rect x="404" y="214" width="13" height="13" rx="2" fill="#161b22"><title>14 Aug 2026: 0 commits</title></rect>
+<rect x="404" y="230" width="13" height="13" rx="2" fill="#161b22"><title>15 Aug 2026: 0 commits</title></rect>
+<rect x="404" y="246" width="13" height="13" rx="2" fill="#161b22"><title>16 Aug 2026: 0 commits</title></rect>
+<rect x="420" y="150" width="13" height="13" rx="2" fill="#0b4a55"><title>17 Aug 2026: 1 commits</title></rect>
+<rect x="420" y="166" width="13" height="13" rx="2" fill="#161b22"><title>18 Aug 2026: 0 commits</title></rect>
+<rect x="420" y="182" width="13" height="13" rx="2" fill="#161b22"><title>19 Aug 2026: 0 commits</title></rect>
+<rect x="420" y="198" width="13" height="13" rx="2" fill="#0b4a55"><title>20 Aug 2026: 1 commits</title></rect>
+<rect x="420" y="214" width="13" height="13" rx="2" fill="#161b22"><title>21 Aug 2026: 0 commits</title></rect>
+<rect x="420" y="230" width="13" height="13" rx="2" fill="#161b22"><title>22 Aug 2026: 0 commits</title></rect>
+<rect x="420" y="246" width="13" height="13" rx="2" fill="#161b22"><title>23 Aug 2026: 0 commits</title></rect>
+<rect x="436" y="150" width="13" height="13" rx="2" fill="#161b22"><title>24 Aug 2026: 0 commits</title></rect>
+<rect x="436" y="166" width="13" height="13" rx="2" fill="#161b22"><title>25 Aug 2026: 0 commits</title></rect>
+<rect x="436" y="182" width="13" height="13" rx="2" fill="#161b22"><title>26 Aug 2026: 0 commits</title></rect>
+<rect x="436" y="198" width="13" height="13" rx="2" fill="#161b22"><title>27 Aug 2026: 0 commits</title></rect>
+<rect x="436" y="214" width="13" height="13" rx="2" fill="#161b22"><title>28 Aug 2026: 0 commits</title></rect>
+<rect x="436" y="230" width="13" height="13" rx="2" fill="#161b22"><title>29 Aug 2026: 0 commits</title></rect>
+<rect x="436" y="246" width="13" height="13" rx="2" fill="#161b22"><title>30 Aug 2026: 0 commits</title></rect>
+<rect x="452" y="150" width="13" height="13" rx="2" fill="#161b22"><title>31 Aug 2026: 0 commits</title></rect>
+<rect x="452" y="166" width="13" height="13" rx="2" fill="#161b22"><title>01 Sep 2026: 0 commits</title></rect>
+<rect x="452" y="182" width="13" height="13" rx="2" fill="#161b22"><title>02 Sep 2026: 0 commits</title></rect>
+<rect x="452" y="198" width="13" height="13" rx="2" fill="#161b22"><title>03 Sep 2026: 0 commits</title></rect>
+<rect x="452" y="214" width="13" height="13" rx="2" fill="#161b22"><title>04 Sep 2026: 0 commits</title></rect>
+<rect x="452" y="230" width="13" height="13" rx="2" fill="#161b22"><title>05 Sep 2026: 0 commits</title></rect>
+<rect x="452" y="246" width="13" height="13" rx="2" fill="#161b22"><title>06 Sep 2026: 0 commits</title></rect>
+<rect x="468" y="150" width="13" height="13" rx="2" fill="#161b22"><title>07 Sep 2026: 0 commits</title></rect>
+<rect x="468" y="166" width="13" height="13" rx="2" fill="#161b22"><title>08 Sep 2026: 0 commits</title></rect>
+<rect x="468" y="182" width="13" height="13" rx="2" fill="#161b22"><title>09 Sep 2026: 0 commits</title></rect>
+<rect x="468" y="198" width="13" height="13" rx="2" fill="#161b22"><title>10 Sep 2026: 0 commits</title></rect>
+<rect x="468" y="214" width="13" height="13" rx="2" fill="#161b22"><title>11 Sep 2026: 0 commits</title></rect>
+<rect x="468" y="230" width="13" height="13" rx="2" fill="#161b22"><title>12 Sep 2026: 0 commits</title></rect>
+<rect x="468" y="246" width="13" height="13" rx="2" fill="#161b22"><title>13 Sep 2026: 0 commits</title></rect>
+<rect x="484" y="150" width="13" height="13" rx="2" fill="#161b22"><title>14 Sep 2026: 0 commits</title></rect>
+<rect x="484" y="166" width="13" height="13" rx="2" fill="#161b22"><title>15 Sep 2026: 0 commits</title></rect>
+<rect x="484" y="182" width="13" height="13" rx="2" fill="#161b22"><title>16 Sep 2026: 0 commits</title></rect>
+<rect x="484" y="198" width="13" height="13" rx="2" fill="#161b22"><title>17 Sep 2026: 0 commits</title></rect>
+<rect x="484" y="214" width="13" height="13" rx="2" fill="#00849a"><title>18 Sep 2026: 3 commits</title></rect>
+<rect x="484" y="230" width="13" height="13" rx="2" fill="#161b22"><title>19 Sep 2026: 0 commits</title></rect>
+<rect x="484" y="246" width="13" height="13" rx="2" fill="#161b22"><title>20 Sep 2026: 0 commits</title></rect>
+<rect x="500" y="150" width="13" height="13" rx="2" fill="#161b22"><title>21 Sep 2026: 0 commits</title></rect>
+<rect x="500" y="166" width="13" height="13" rx="2" fill="#161b22"><title>22 Sep 2026: 0 commits</title></rect>
+<rect x="500" y="182" width="13" height="13" rx="2" fill="#161b22"><title>23 Sep 2026: 0 commits</title></rect>
+<rect x="500" y="198" width="13" height="13" rx="2" fill="#00e5ff"><title>24 Sep 2026: 13 commits</title></rect>
+<rect x="500" y="214" width="13" height="13" rx="2" fill="#00849a"><title>25 Sep 2026: 5 commits</title></rect>
+<rect x="500" y="230" width="13" height="13" rx="2" fill="#00e5ff"><title>26 Sep 2026: 16 commits</title></rect>
+<rect x="500" y="246" width="13" height="13" rx="2" fill="#161b22"><title>27 Sep 2026: 0 commits</title></rect>
+<rect x="516" y="150" width="13" height="13" rx="2" fill="#161b22"><title>28 Sep 2026: 0 commits</title></rect>
+<rect x="516" y="166" width="13" height="13" rx="2" fill="#161b22"><title>29 Sep 2026: 0 commits</title></rect>
+<rect x="516" y="182" width="13" height="13" rx="2" fill="#0b4a55"><title>30 Sep 2026: 1 commits</title></rect>
+<rect x="516" y="198" width="13" height="13" rx="2" fill="#161b22"><title>01 Oct 2026: 0 commits</title></rect>
+<rect x="516" y="214" width="13" height="13" rx="2" fill="#161b22"><title>02 Oct 2026: 0 commits</title></rect>
+<rect x="516" y="230" width="13" height="13" rx="2" fill="#161b22"><title>03 Oct 2026: 0 commits</title></rect>
+<rect x="516" y="246" width="13" height="13" rx="2" fill="#161b22"><title>04 Oct 2026: 0 commits</title></rect>
+<rect x="532" y="150" width="13" height="13" rx="2" fill="#00e5ff"><title>05 Oct 2026: 14 commits</title></rect>
+<rect x="532" y="166" width="13" height="13" rx="2" fill="#00e5ff"><title>06 Oct 2026: 13 commits</title></rect>
+<rect x="532" y="182" width="13" height="13" rx="2" fill="#161b22"><title>07 Oct 2026: 0 commits</title></rect>
+<rect x="532" y="198" width="13" height="13" rx="2" fill="#00849a"><title>08 Oct 2026: 3 commits</title></rect>
+<rect x="532" y="214" width="13" height="13" rx="2" fill="#0b4a55"><title>09 Oct 2026: 2 commits</title></rect>
+<text x="20" y="287" class="m">less</text>
+<rect x="60" y="278" width="13" height="13" rx="2" fill="#161b22"/>
+<rect x="75" y="278" width="13" height="13" rx="2" fill="#0b4a55"/>
+<rect x="90" y="278" width="13" height="13" rx="2" fill="#00849a"/>
+<rect x="105" y="278" width="13" height="13" rx="2" fill="#00c2dc"/>
+<rect x="120" y="278" width="13" height="13" rx="2" fill="#00e5ff"/>
+<text x="141" y="287" class="m">more</text>
+<text x="20" y="312" class="m">busiest day: 20 Jul 2026 · 83 commits (frontends → k8s cutover)</text>
+<text x="580" y="128" class="row">// COMMITS BY REPO</text>
+<text x="580" y="159" class="t">api</text>
+<rect x="700" y="150" width="140" height="11" rx="2" fill="#161b22"/><rect x="700" y="150" width="140" height="11" rx="2" fill="#00e5ff" opacity="1.00"/>
+<text x="848" y="159" class="t">385</text><text x="884" y="159" class="m">Go</text>
+<text x="580" y="178" class="t">admin-panel</text>
+<rect x="700" y="169" width="140" height="11" rx="2" fill="#161b22"/><rect x="700" y="169" width="39" height="11" rx="2" fill="#00e5ff" opacity="0.60"/>
+<text x="848" y="178" class="t">108</text><text x="884" y="178" class="m">React/TS</text>
+<text x="580" y="197" class="t">infra</text>
+<rect x="700" y="188" width="140" height="11" rx="2" fill="#161b22"/><rect x="700" y="188" width="30" height="11" rx="2" fill="#00e5ff" opacity="0.57"/>
+<text x="848" y="197" class="t">82</text><text x="884" y="197" class="m">Argo CD/TF</text>
+<text x="580" y="216" class="t">web</text>
+<rect x="700" y="207" width="140" height="11" rx="2" fill="#161b22"/><rect x="700" y="207" width="23" height="11" rx="2" fill="#00e5ff" opacity="0.54"/>
+<text x="848" y="216" class="t">62</text><text x="884" y="216" class="m">React/Astro</text>
+<text x="580" y="235" class="t">care</text>
+<rect x="700" y="226" width="140" height="11" rx="2" fill="#161b22"/><rect x="700" y="226" width="12" height="11" rx="2" fill="#00e5ff" opacity="0.50"/>
+<text x="848" y="235" class="t">34</text><text x="884" y="235" class="m">Rust/TS</text>
+<text x="580" y="254" class="t">ios</text>
+<rect x="700" y="245" width="140" height="11" rx="2" fill="#161b22"/><rect x="700" y="245" width="9" height="11" rx="2" fill="#00e5ff" opacity="0.49"/>
+<text x="848" y="254" class="t">26</text><text x="884" y="254" class="m">SwiftUI</text>
+<text x="580" y="273" class="t">sahayak</text>
+<rect x="700" y="264" width="140" height="11" rx="2" fill="#161b22"/><rect x="700" y="264" width="6" height="11" rx="2" fill="#00e5ff" opacity="0.47"/>
+<text x="848" y="273" class="t">16</text><text x="884" y="273" class="m">Python</text>
+<text x="580" y="292" class="t">android</text>
+<rect x="700" y="283" width="140" height="11" rx="2" fill="#161b22"/><rect x="700" y="283" width="5" height="11" rx="2" fill="#00e5ff" opacity="0.47"/>
+<text x="848" y="292" class="t">14</text><text x="884" y="292" class="m">Kotlin</text>
+<text x="580" y="311" class="t">ops-assistant</text>
+<rect x="700" y="302" width="140" height="11" rx="2" fill="#161b22"/><rect x="700" y="302" width="5" height="11" rx="2" fill="#00e5ff" opacity="0.47"/>
+<text x="848" y="311" class="t">14</text><text x="884" y="311" class="m">Python</text>
+<text x="580" y="330" class="t">agent</text>
+<rect x="700" y="321" width="140" height="11" rx="2" fill="#161b22"/><rect x="700" y="321" width="5" height="11" rx="2" fill="#00e5ff" opacity="0.47"/>
+<text x="848" y="330" class="t">13</text><text x="884" y="330" class="m">Markdown</text>
+<path d="M20 342H980" stroke="#30363d"/>
+<text x="20" y="360" class="m">source: git log over the org's private repos · author = me · merges, bots &amp; co-founder commits excluded</text>
+</svg>

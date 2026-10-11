@@ -42,11 +42,13 @@ Go service with Prometheus SLOs, Grafana dashboards, Alertmanager and black-box 
 
 <img src="assets/stack.svg" alt="Skills" width="100%">
 
+<a href="MEDHA.md"><img src="assets/medha-work.svg" alt="Proof of work at Medha Innovations: 754 commits across 10 private repositories, Feb to Oct 2026" width="100%"></a>
+
 
 | | |
 |---|---|
 | Eval discipline | Every metric comes from a committed, rerunnable script; **live-model held-out evals for EvidenceRAG, TraceWard and ReconcileAI are in progress** |
-| Real product work | Founding engineer at Medha Innovations (two founders): Go platform, an LLM booking assistant with a grounding gate, and a deployed offline docs QA service. Repos are private; walkthrough on request — [summary](https://portfolio.vinaykr.workers.dev/#experience) |
+| Real product work | Founding engineer at Medha Innovations (two founders): Go platform, an LLM booking assistant with a grounding gate, and a deployed offline docs QA service. Repos are private, so here are 754 authored commits with SHAs: [**commit ledger →**](MEDHA.md) · live walkthrough on request |
 
 
 
