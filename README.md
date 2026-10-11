@@ -7,6 +7,8 @@
 [**LinkedIn**](https://linkedin.com/in/vi-naykr) &nbsp;·&nbsp;
 [**Email**](mailto:vinayravindranatha@gmail.com)
 
+<a href="MEDHA.md"><img src="assets/medha-work.svg" alt="Proof of work at Medha Innovations: 754 commits across 10 private repositories, Feb to Oct 2026" width="100%"></a>
+
 </div>
 
 
@@ -41,8 +43,6 @@ Go service with Prometheus SLOs, Grafana dashboards, Alertmanager and black-box 
 </table>
 
 <img src="assets/stack.svg" alt="Skills" width="100%">
-
-<a href="MEDHA.md"><img src="assets/medha-work.svg" alt="Proof of work at Medha Innovations: 754 commits across 10 private repositories, Feb to Oct 2026" width="100%"></a>
 
 
 | | |
