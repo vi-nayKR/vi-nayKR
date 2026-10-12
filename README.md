@@ -9,14 +9,9 @@
 
 <a href="MEDHA.md"><img src="assets/medha-work.svg" alt="Proof of work at Medha Innovations: 754 commits across 10 private repositories, Feb to Oct 2026" width="100%"></a>
 
-<a href="https://github.com/vi-nayKR/vi-nayKR/raw/main/assets/vinay-kr-cinematic-60s.mp4"><img src="assets/cinematic-preview.gif" alt="60-second proof reel preview: ReconcileAI links a flagged price back to the exact invoice row" width="100%"></a>
+https://github.com/user-attachments/assets/20514571-acb8-44de-944e-bb52fd9ad4a2
 
-
-https://github.com/user-attachments/assets/c5cdb6d7-4cc0-4e5f-adf3-4d00dc99688c
-
-
-
-<sub>▶ <a href="https://github.com/vi-nayKR/vi-nayKR/raw/main/assets/vinay-kr-cinematic-60s.mp4">Watch the 60-second proof reel with sound</a> · real product footage · every number with its source</sub>
+<sub>▶ <a href="https://github.com/vi-nayKR/vi-nayKR/raw/main/assets/vinay-kr-product-demo.mp4">Watch the 60-second proof reel with sound</a> · real product footage · every number with its source</sub>
 
 </div>
 
