@@ -11,6 +11,11 @@
 
 <a href="https://github.com/vi-nayKR/vi-nayKR/raw/main/assets/vinay-kr-cinematic-60s.mp4"><img src="assets/cinematic-preview.gif" alt="60-second proof reel preview: ReconcileAI links a flagged price back to the exact invoice row" width="100%"></a>
 
+
+https://github.com/user-attachments/assets/c5cdb6d7-4cc0-4e5f-adf3-4d00dc99688c
+
+
+
 <sub>▶ <a href="https://github.com/vi-nayKR/vi-nayKR/raw/main/assets/vinay-kr-cinematic-60s.mp4">Watch the 60-second proof reel with sound</a> · real product footage · every number with its source</sub>
 
 </div>
