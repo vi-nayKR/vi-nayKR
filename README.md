@@ -9,6 +9,8 @@
 
 <a href="MEDHA.md"><img src="assets/medha-work.svg" alt="Proof of work at Medha Innovations: 754 commits across 10 private repositories, Feb to Oct 2026" width="100%"></a>
 
+<a href="assets/vinay-kr-showreel-2min.mp4"><img src="assets/showreel-poster.jpg" alt="Watch the 2-minute proof reel: real product footage and eval results, every number with its source" width="100%"></a>
+
 </div>
 
 
