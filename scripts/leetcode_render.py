@@ -1,14 +1,15 @@
-"""Render assets/leetcode.svg: LeetCode problems solved by difficulty, plus NeetCode 150 / Blind 75 progress.
+"""Render assets/leetcode.svg: LeetCode problems solved by difficulty, plus NeetCode 250 / 150 / Blind 75 progress.
 
 LeetCode totals come from the public GraphQL API. NeetCode progress needs the LEETCODE_SESSION
 cookie (env var): every NeetCode problem is a LeetCode problem, so we check each one's solved status.
+The NeetCode lists are read from neetcode.io's own app bundle (it has no API).
 Pass --require-neetcode to fail instead of skipping the NeetCode row when the cookie is missing.
 """
-import json, os, sys, urllib.request
+import json, os, re, sys, urllib.request
 from pathlib import Path
 
 USERNAME = "vi-nayKR"
-NEETCODE_LISTS = "https://raw.githubusercontent.com/neetcode-gh/leetcode/main/.problemSiteData.json"
+NEETCODE_LISTS = (("NEETCODE 250", "neetcode250"), ("NEETCODE 150", "neetcode150"), ("BLIND 75", "blind75"))
 args = [x for x in sys.argv[1:] if not x.startswith("--")]
 out = Path(args[0] if args else "assets/leetcode.svg")
 session = os.environ.get("LEETCODE_SESSION", "").strip()
@@ -26,6 +27,31 @@ def gql(query, variables=None, auth=False):
     return body["data"]
 
 
+def fetch(url):
+    req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0"})
+    return urllib.request.urlopen(req, timeout=60).read().decode("utf-8")
+
+
+def neetcode_problems():
+    """Problem records from neetcode.io's main bundle: {slug, difficulty, neetcode250/150, blind75 flags}."""
+    page = fetch("https://neetcode.io/practice")
+    bundle = re.search(r'src="(main\.[0-9a-f]+\.js)"', page)
+    if not bundle:
+        sys.exit("neetcode.io: main bundle not found on /practice")
+    js = fetch(f"https://neetcode.io/{bundle[1]}")
+    problems = {}
+    for rec in re.findall(r'\{problem:"(?:[^"\\]|\\.)*",[^{}]*\}', js):
+        link, diff = re.search(r'link:"([^"]+)"', rec), re.search(r'difficulty:"(\w+)"', rec)
+        if link and diff:
+            p = problems.setdefault(link[1].strip("/"), {"slug": link[1].strip("/"), "difficulty": diff[1]})
+            for _, key in NEETCODE_LISTS:
+                p[key] = p.get(key) or f"{key}:!0" in rec
+    sizes = {key: sum(p[key] for p in problems.values()) for _, key in NEETCODE_LISTS}
+    if sizes != {"neetcode250": 250, "neetcode150": 150, "blind75": 75}:
+        sys.exit(f"neetcode.io bundle changed shape, list sizes: {sizes}")
+    return list(problems.values())
+
+
 data = gql("""query($u:String!){
   allQuestionsCount{ difficulty count }
   matchedUser(username:$u){ submitStatsGlobal{ acSubmissionNum{ difficulty count } } }
@@ -38,20 +64,17 @@ solved = {d["difficulty"]: d["count"] for d in data["matchedUser"]["submitStatsG
 # NeetCode progress: {list name: (problems, solved slugs)}
 neet = None
 if session:
-    problems = json.load(urllib.request.urlopen(NEETCODE_LISTS, timeout=60))
-    for p in problems:
-        p["slug"] = p["link"].strip("/")
-    me = gql("{ userStatus{ isSignedIn username } }", auth=True)["userStatus"]
+    problems = neetcode_problems()
+    me =gql("{ userStatus{ isSignedIn username } }", auth=True)["userStatus"]
     if not me["isSignedIn"]:
         sys.exit("LEETCODE_SESSION is expired or invalid: copy a fresh one from leetcode.com cookies")
     if me["username"].lower() != USERNAME.lower():
         sys.exit(f"LEETCODE_SESSION belongs to {me['username']!r}, expected {USERNAME!r}")
-    slugs = sorted({p["slug"] for p in problems if p.get("neetcode150") or p.get("blind75")})
+    slugs = sorted(p["slug"] for p in problems if any(p[key] for _, key in NEETCODE_LISTS))
     q = "{" + " ".join(f'q{i}: question(titleSlug:{json.dumps(s)}){{ status }}' for i, s in enumerate(slugs)) + "}"
     st = gql(q, auth=True)
     done = {s for i, s in enumerate(slugs) if (st[f"q{i}"] or {}).get("status") == "ac"}
-    neet = {name: ([p for p in problems if p.get(key)], done)
-            for name, key in (("NEETCODE 150", "neetcode150"), ("BLIND 75", "blind75"))}
+    neet = {name: ([p for p in problems if p[key]], done) for name, key in NEETCODE_LISTS}
 elif "--require-neetcode" in sys.argv:
     sys.exit("LEETCODE_SESSION is not set")
 else:
@@ -102,20 +125,21 @@ a(plate(20, 40, 232, solved["All"], total["All"], "TOTAL SOLVED"))
 for i, d in enumerate(("Easy", "Medium", "Hard")):
     a(plate(262 + i * 242, 40, 232, solved[d], total[d], d.upper(), COLORS[d], solved[d] / total[d] if total[d] else 0))
 
-# NeetCode: one wide plate per list, with an Easy/Medium/Hard split
+# NeetCode: one plate per list, with a colour-keyed Easy/Medium/Hard split on the label line
 if neet:
     a('<text x="20" y="168" class="row">// NEETCODE ROADMAP</text>')
     for i, (name, (ps, done)) in enumerate(neet.items()):
         n = sum(p["slug"] in done for p in ps)
-        split = " · ".join(
-            f'{d[0]} {sum(p["slug"] in done for p in ps if p["difficulty"] == d)}/{sum(p["difficulty"] == d for p in ps)}'
+        split = " ".join(
+            f'<tspan style="fill:{COLORS[d]}">{d[0]}</tspan> '
+            f'{sum(p["slug"] in done for p in ps if p["difficulty"] == d)}/{sum(p["difficulty"] == d for p in ps)}'
             for d in ("Easy", "Medium", "Hard"))
-        x, w = 20 + i * 484, 474
+        x, w = 20 + i * 323, 313
         a(plate(x, 180, w, n, len(ps), name, "#00e5ff", n / len(ps),
-                f'<text x="{w-16}" y="50" class="m" text-anchor="end">{split}</text>'))
+                f'<text x="{w-16}" y="70" class="m" text-anchor="end">{split}</text>'))
 
 a(f'<text x="20" y="{H-10}" class="m">source: leetcode.com/u/{USERNAME}'
-  f'{" · NeetCode lists from neetcode-gh/leetcode" if neet else ""} · refreshed daily by GitHub Actions</text>')
+  f'{" · NeetCode lists from neetcode.io" if neet else ""} · refreshed daily by GitHub Actions</text>')
 a("</svg>")
 out.write_text("\n".join(s) + "\n", encoding="utf-8")
 
