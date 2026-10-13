@@ -2,7 +2,7 @@
 import json, sys, urllib.request
 from pathlib import Path
 
-USERNAME = "VinayKR"
+USERNAME = "vi-nayKR"
 out = Path(sys.argv[1] if len(sys.argv) > 1 else "assets/leetcode.svg")
 
 QUERY = """query($u:String!){

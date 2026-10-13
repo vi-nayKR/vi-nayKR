@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 172" width="1000" height="172" role="img" aria-label="LeetCode: 1 problems solved. Easy 1, Medium 0, Hard 0">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 172" width="1000" height="172" role="img" aria-label="LeetCode: 212 problems solved. Easy 65, Medium 98, Hard 49">
 <title>LeetCode · problems solved</title>
 <defs><style>
 text{font-family:'JetBrains Mono','Cascadia Code',Consolas,'Courier New',monospace}
@@ -14,10 +14,10 @@ text{font-family:'JetBrains Mono','Cascadia Code',Consolas,'Courier New',monospa
 </style></defs>
 <rect width="1000" height="172" fill="#0d1117"/>
 <text x="20" y="26" class="row">// LEETCODE · PROBLEMS SOLVED</text>
-<circle cx="958" cy="22" r="4" class="dot"/><text x="946" y="26" class="m" text-anchor="end">@VinayKR</text>
-<g transform="translate(20,40)"><rect class="plate" width="232" height="100" rx="3"/><path class="br" d="M0 12V0H12M220 100H232V88"/><text x="16" y="50" class="big">1<tspan class="m" font-weight="400"> / 4081</tspan></text><text x="16" y="76" class="lab">TOTAL SOLVED</text></g>
-<g transform="translate(262,40)"><rect class="plate" width="232" height="100" rx="3"/><path class="br" d="M0 12V0H12M220 100H232V88"/><text x="16" y="50" class="big">1<tspan class="m" font-weight="400"> / 971</tspan></text><text x="16" y="70" class="lab" style="fill:#2bff88">EASY</text><rect x="16" y="80" width="200" height="6" rx="3" fill="#0d1117"/><rect x="16" y="80" width="3" height="6" rx="3" fill="#2bff88"/></g>
-<g transform="translate(504,40)"><rect class="plate" width="232" height="100" rx="3"/><path class="br" d="M0 12V0H12M220 100H232V88"/><text x="16" y="50" class="big">0<tspan class="m" font-weight="400"> / 2128</tspan></text><text x="16" y="70" class="lab" style="fill:#ffb020">MEDIUM</text><rect x="16" y="80" width="200" height="6" rx="3" fill="#0d1117"/></g>
-<g transform="translate(746,40)"><rect class="plate" width="232" height="100" rx="3"/><path class="br" d="M0 12V0H12M220 100H232V88"/><text x="16" y="50" class="big">0<tspan class="m" font-weight="400"> / 982</tspan></text><text x="16" y="70" class="lab" style="fill:#ff4d6d">HARD</text><rect x="16" y="80" width="200" height="6" rx="3" fill="#0d1117"/></g>
-<text x="20" y="162" class="m">source: leetcode.com/u/VinayKR · refreshed daily by GitHub Actions</text>
+<circle cx="958" cy="22" r="4" class="dot"/><text x="946" y="26" class="m" text-anchor="end">@vi-nayKR</text>
+<g transform="translate(20,40)"><rect class="plate" width="232" height="100" rx="3"/><path class="br" d="M0 12V0H12M220 100H232V88"/><text x="16" y="50" class="big">212<tspan class="m" font-weight="400"> / 4081</tspan></text><text x="16" y="76" class="lab">TOTAL SOLVED</text></g>
+<g transform="translate(262,40)"><rect class="plate" width="232" height="100" rx="3"/><path class="br" d="M0 12V0H12M220 100H232V88"/><text x="16" y="50" class="big">65<tspan class="m" font-weight="400"> / 971</tspan></text><text x="16" y="70" class="lab" style="fill:#2bff88">EASY</text><rect x="16" y="80" width="200" height="6" rx="3" fill="#0d1117"/><rect x="16" y="80" width="13" height="6" rx="3" fill="#2bff88"/></g>
+<g transform="translate(504,40)"><rect class="plate" width="232" height="100" rx="3"/><path class="br" d="M0 12V0H12M220 100H232V88"/><text x="16" y="50" class="big">98<tspan class="m" font-weight="400"> / 2128</tspan></text><text x="16" y="70" class="lab" style="fill:#ffb020">MEDIUM</text><rect x="16" y="80" width="200" height="6" rx="3" fill="#0d1117"/><rect x="16" y="80" width="9" height="6" rx="3" fill="#ffb020"/></g>
+<g transform="translate(746,40)"><rect class="plate" width="232" height="100" rx="3"/><path class="br" d="M0 12V0H12M220 100H232V88"/><text x="16" y="50" class="big">49<tspan class="m" font-weight="400"> / 982</tspan></text><text x="16" y="70" class="lab" style="fill:#ff4d6d">HARD</text><rect x="16" y="80" width="200" height="6" rx="3" fill="#0d1117"/><rect x="16" y="80" width="10" height="6" rx="3" fill="#ff4d6d"/></g>
+<text x="20" y="162" class="m">source: leetcode.com/u/vi-nayKR · refreshed daily by GitHub Actions</text>
 </svg>
