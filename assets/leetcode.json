@@ -1,10 +1,10 @@
 {
   "username": "vi-nayKR",
   "solved": {
-    "All": 499,
-    "Easy": 162,
-    "Medium": 225,
-    "Hard": 112
+    "All": 513,
+    "Easy": 163,
+    "Medium": 230,
+    "Hard": 120
   },
   "total": {
     "All": 4082,
@@ -12,5 +12,14 @@
     "Medium": 2128,
     "Hard": 983
   },
-  "neetcode": null
+  "neetcode": {
+    "NEETCODE 150": {
+      "solved": 114,
+      "total": 150
+    },
+    "BLIND 75": {
+      "solved": 63,
+      "total": 75
+    }
+  }
 }
