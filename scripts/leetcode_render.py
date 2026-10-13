@@ -10,6 +10,7 @@ from pathlib import Path
 
 USERNAME = "vi-nayKR"
 NEETCODE_LISTS = (("NEETCODE 250", "neetcode250"), ("NEETCODE 150", "neetcode150"), ("BLIND 75", "blind75"))
+MANUAL = Path(__file__).with_name("neetcode_progress.json")  # numbers from the neetcode.io dashboard
 args = [x for x in sys.argv[1:] if not x.startswith("--")]
 out = Path(args[0] if args else "assets/leetcode.svg")
 session = os.environ.get("LEETCODE_SESSION", "").strip()
@@ -61,11 +62,12 @@ if not data["matchedUser"]:
 total = {d["difficulty"]: d["count"] for d in data["allQuestionsCount"]}
 solved = {d["difficulty"]: d["count"] for d in data["matchedUser"]["submitStatsGlobal"]["acSubmissionNum"]}
 
-# NeetCode progress: {list name: (problems, solved slugs)}
+# NeetCode progress: {list name: {difficulty: [solved, total]}}
+DIFFS = ("Easy", "Medium", "Hard")
 neet = None
 if session:
     problems = neetcode_problems()
-    me =gql("{ userStatus{ isSignedIn username } }", auth=True)["userStatus"]
+    me = gql("{ userStatus{ isSignedIn username } }", auth=True)["userStatus"]
     if not me["isSignedIn"]:
         sys.exit("LEETCODE_SESSION is expired or invalid: copy a fresh one from leetcode.com cookies")
     if me["username"].lower() != USERNAME.lower():
@@ -74,18 +76,34 @@ if session:
     q = "{" + " ".join(f'q{i}: question(titleSlug:{json.dumps(s)}){{ status }}' for i, s in enumerate(slugs)) + "}"
     st = gql(q, auth=True)
     done = {s for i, s in enumerate(slugs) if (st[f"q{i}"] or {}).get("status") == "ac"}
-    neet = {name: ([p for p in problems if p[key]], done) for name, key in NEETCODE_LISTS}
+    neet = {name: {d: [sum(p["slug"] in done for p in problems if p[key] and p["difficulty"] == d),
+                       sum(1 for p in problems if p[key] and p["difficulty"] == d)] for d in DIFFS}
+            for name, key in NEETCODE_LISTS}
+    # Problems solved in neetcode.io's own editor never reach LeetCode, so take the higher of the
+    # LeetCode-verified count and the numbers copied from the neetcode.io dashboard.
+    manual = json.loads(MANUAL.read_text(encoding="utf-8")) if MANUAL.exists() else {}
+    for name, counts in neet.items():
+        for d in DIFFS:
+            counts[d][0] = min(max(counts[d][0], manual.get(name, {}).get(d, 0)), counts[d][1])
 elif "--require-neetcode" in sys.argv:
     sys.exit("LEETCODE_SESSION is not set")
 else:
     print("LEETCODE_SESSION not set: skipping NeetCode row")
+
+
+def n_solved(counts):
+    return sum(c[0] for c in counts.values())
+
+
+def n_total(counts):
+    return sum(c[1] for c in counts.values())
 
 W, H = 1000, 312 if neet else 172
 s = []
 a = s.append
 label = f"LeetCode: {solved['All']} problems solved. Easy {solved['Easy']}, Medium {solved['Medium']}, Hard {solved['Hard']}"
 if neet:
-    label += "".join(f". {n.title()}: {sum(p['slug'] in d for p in ps)} of {len(ps)}" for n, (ps, d) in neet.items())
+    label += "".join(f". {n.title()}: {n_solved(c)} of {n_total(c)}" for n, c in neet.items())
 a(f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {W} {H}" width="{W}" height="{H}" role="img" aria-label="{label}">')
 a("<title>LeetCode · problems solved</title>")
 a("""<defs><style>
@@ -128,14 +146,11 @@ for i, d in enumerate(("Easy", "Medium", "Hard")):
 # NeetCode: one plate per list, with a colour-keyed Easy/Medium/Hard split on the label line
 if neet:
     a('<text x="20" y="168" class="row">// NEETCODE ROADMAP</text>')
-    for i, (name, (ps, done)) in enumerate(neet.items()):
-        n = sum(p["slug"] in done for p in ps)
-        split = " ".join(
-            f'<tspan style="fill:{COLORS[d]}">{d[0]}</tspan> '
-            f'{sum(p["slug"] in done for p in ps if p["difficulty"] == d)}/{sum(p["difficulty"] == d for p in ps)}'
-            for d in ("Easy", "Medium", "Hard"))
+    for i, (name, counts) in enumerate(neet.items()):
+        n, t = n_solved(counts), n_total(counts)
+        split = " ".join(f'<tspan style="fill:{COLORS[d]}">{d[0]}</tspan> {counts[d][0]}/{counts[d][1]}' for d in DIFFS)
         x, w = 20 + i * 323, 313
-        a(plate(x, 180, w, n, len(ps), name, "#00e5ff", n / len(ps),
+        a(plate(x, 180, w, n, t, name, "#00e5ff", n / t,
                 f'<text x="{w-16}" y="70" class="m" text-anchor="end">{split}</text>'))
 
 a(f'<text x="20" y="{H-10}" class="m">source: leetcode.com/u/{USERNAME}'
@@ -146,7 +161,7 @@ out.write_text("\n".join(s) + "\n", encoding="utf-8")
 # Same numbers as JSON, read live by the portfolio site (portfolio.vinaykr.workers.dev, Skills tab)
 summary = {"username": USERNAME, "solved": solved, "total": total, "neetcode": None}
 if neet:
-    summary["neetcode"] = {n: {"solved": sum(p["slug"] in d for p in ps), "total": len(ps)} for n, (ps, d) in neet.items()}
+    summary["neetcode"] = {n: {"solved": n_solved(c), "total": n_total(c)} for n, c in neet.items()}
 out.with_suffix(".json").write_text(json.dumps(summary, indent=2) + "\n", encoding="utf-8")
 print(f"wrote {out}: {solved['All']} solved (E{solved['Easy']} M{solved['Medium']} H{solved['Hard']})"
-      + "".join(f"; {n} {sum(p['slug'] in d for p in ps)}/{len(ps)}" for n, (ps, d) in (neet or {}).items()))
+      + "".join(f"; {n} {n_solved(c)}/{n_total(c)}" for n, c in (neet or {}).items()))
