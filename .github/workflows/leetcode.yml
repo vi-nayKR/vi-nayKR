@@ -22,9 +22,10 @@ jobs:
           LEETCODE_SESSION: ${{ secrets.LEETCODE_SESSION }}
       - name: Commit if changed
         run: |
-          git diff --quiet assets/leetcode.svg && exit 0
+          git add -N assets/leetcode.json
+          git diff --quiet assets/leetcode.svg assets/leetcode.json && exit 0
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add assets/leetcode.svg
+          git add assets/leetcode.svg assets/leetcode.json
           git commit -m "Refresh LeetCode stats"
           git push

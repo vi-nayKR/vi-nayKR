@@ -118,5 +118,11 @@ a(f'<text x="20" y="{H-10}" class="m">source: leetcode.com/u/{USERNAME}'
   f'{" · NeetCode lists from neetcode-gh/leetcode" if neet else ""} · refreshed daily by GitHub Actions</text>')
 a("</svg>")
 out.write_text("\n".join(s) + "\n", encoding="utf-8")
+
+# Same numbers as JSON, read live by the portfolio site (portfolio.vinaykr.workers.dev, Skills tab)
+summary = {"username": USERNAME, "solved": solved, "total": total, "neetcode": None}
+if neet:
+    summary["neetcode"] = {n: {"solved": sum(p["slug"] in d for p in ps), "total": len(ps)} for n, (ps, d) in neet.items()}
+out.with_suffix(".json").write_text(json.dumps(summary, indent=2) + "\n", encoding="utf-8")
 print(f"wrote {out}: {solved['All']} solved (E{solved['Easy']} M{solved['Medium']} H{solved['Hard']})"
       + "".join(f"; {n} {sum(p['slug'] in d for p in ps)}/{len(ps)}" for n, (ps, d) in (neet or {}).items()))
