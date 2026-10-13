@@ -1,30 +1,69 @@
-"""Render assets/leetcode.svg from LeetCode's public GraphQL API: problems solved by difficulty."""
-import json, sys, urllib.request
+"""Render assets/leetcode.svg: LeetCode problems solved by difficulty, plus NeetCode 150 / Blind 75 progress.
+
+LeetCode totals come from the public GraphQL API. NeetCode progress needs the LEETCODE_SESSION
+cookie (env var): every NeetCode problem is a LeetCode problem, so we check each one's solved status.
+Pass --require-neetcode to fail instead of skipping the NeetCode row when the cookie is missing.
+"""
+import json, os, sys, urllib.request
 from pathlib import Path
 
 USERNAME = "vi-nayKR"
-out = Path(sys.argv[1] if len(sys.argv) > 1 else "assets/leetcode.svg")
+NEETCODE_LISTS = "https://raw.githubusercontent.com/neetcode-gh/leetcode/main/.problemSiteData.json"
+args = [x for x in sys.argv[1:] if not x.startswith("--")]
+out = Path(args[0] if args else "assets/leetcode.svg")
+session = os.environ.get("LEETCODE_SESSION", "").strip()
 
-QUERY = """query($u:String!){
+
+def gql(query, variables=None, auth=False):
+    headers = {"Content-Type": "application/json", "Referer": "https://leetcode.com", "User-Agent": "Mozilla/5.0"}
+    if auth:
+        headers |= {"Cookie": f"LEETCODE_SESSION={session}; csrftoken=x", "x-csrftoken": "x"}
+    req = urllib.request.Request("https://leetcode.com/graphql", headers=headers,
+                                 data=json.dumps({"query": query, "variables": variables or {}}).encode())
+    body = json.load(urllib.request.urlopen(req, timeout=60))
+    if body.get("errors"):
+        sys.exit(f"LeetCode API error: {body['errors']}")
+    return body["data"]
+
+
+data = gql("""query($u:String!){
   allQuestionsCount{ difficulty count }
   matchedUser(username:$u){ submitStatsGlobal{ acSubmissionNum{ difficulty count } } }
-}"""
-req = urllib.request.Request(
-    "https://leetcode.com/graphql",
-    data=json.dumps({"query": QUERY, "variables": {"u": USERNAME}}).encode(),
-    headers={"Content-Type": "application/json", "Referer": "https://leetcode.com", "User-Agent": "Mozilla/5.0"},
-)
-data = json.load(urllib.request.urlopen(req, timeout=30))["data"]
+}""", {"u": USERNAME})
 if not data["matchedUser"]:
     sys.exit(f"LeetCode user {USERNAME!r} not found")
 total = {d["difficulty"]: d["count"] for d in data["allQuestionsCount"]}
 solved = {d["difficulty"]: d["count"] for d in data["matchedUser"]["submitStatsGlobal"]["acSubmissionNum"]}
 
-W, H = 1000, 172
+# NeetCode progress: {list name: (problems, solved slugs)}
+neet = None
+if session:
+    problems = json.load(urllib.request.urlopen(NEETCODE_LISTS, timeout=60))
+    for p in problems:
+        p["slug"] = p["link"].strip("/")
+    me = gql("{ userStatus{ isSignedIn username } }", auth=True)["userStatus"]
+    if not me["isSignedIn"]:
+        sys.exit("LEETCODE_SESSION is expired or invalid: copy a fresh one from leetcode.com cookies")
+    if me["username"].lower() != USERNAME.lower():
+        sys.exit(f"LEETCODE_SESSION belongs to {me['username']!r}, expected {USERNAME!r}")
+    slugs = sorted({p["slug"] for p in problems if p.get("neetcode150") or p.get("blind75")})
+    q = "{" + " ".join(f'q{i}: question(titleSlug:{json.dumps(s)}){{ status }}' for i, s in enumerate(slugs)) + "}"
+    st = gql(q, auth=True)
+    done = {s for i, s in enumerate(slugs) if (st[f"q{i}"] or {}).get("status") == "ac"}
+    neet = {name: ([p for p in problems if p.get(key)], done)
+            for name, key in (("NEETCODE 150", "neetcode150"), ("BLIND 75", "blind75"))}
+elif "--require-neetcode" in sys.argv:
+    sys.exit("LEETCODE_SESSION is not set")
+else:
+    print("LEETCODE_SESSION not set: skipping NeetCode row")
+
+W, H = 1000, 312 if neet else 172
 s = []
 a = s.append
-a(f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {W} {H}" width="{W}" height="{H}" role="img" '
-  f'aria-label="LeetCode: {solved["All"]} problems solved. Easy {solved["Easy"]}, Medium {solved["Medium"]}, Hard {solved["Hard"]}">')
+label = f"LeetCode: {solved['All']} problems solved. Easy {solved['Easy']}, Medium {solved['Medium']}, Hard {solved['Hard']}"
+if neet:
+    label += "".join(f". {n.title()}: {sum(p['slug'] in d for p in ps)} of {len(ps)}" for n, (ps, d) in neet.items())
+a(f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {W} {H}" width="{W}" height="{H}" role="img" aria-label="{label}">')
 a("<title>LeetCode · problems solved</title>")
 a("""<defs><style>
 text{font-family:'JetBrains Mono','Cascadia Code',Consolas,'Courier New',monospace}
@@ -42,28 +81,42 @@ a(f'<rect width="{W}" height="{H}" fill="#0d1117"/>')
 a('<text x="20" y="26" class="row">// LEETCODE · PROBLEMS SOLVED</text>')
 a(f'<circle cx="958" cy="22" r="4" class="dot"/><text x="946" y="26" class="m" text-anchor="end">@{USERNAME}</text>')
 
-# total plate
-pw = 232
-a(f'<g transform="translate(20,40)"><rect class="plate" width="{pw}" height="100" rx="3"/>'
-  f'<path class="br" d="M0 12V0H12M{pw-12} 100H{pw}V88"/>'
-  f'<text x="16" y="50" class="big">{solved["All"]}<tspan class="m" font-weight="400"> / {total["All"]}</tspan></text>'
-  f'<text x="16" y="76" class="lab">TOTAL SOLVED</text></g>')
 
-# difficulty plates with progress bars
+def plate(x, y, w, value, of, lab, color=None, fill=None, extra=""):
+    bw = w - 32
+    g = (f'<g transform="translate({x},{y})"><rect class="plate" width="{w}" height="100" rx="3"/>'
+         f'<path class="br" d="M0 12V0H12M{w-12} 100H{w}V88"/>'
+         f'<text x="16" y="50" class="big">{value}<tspan class="m" font-weight="400"> / {of}</tspan></text>')
+    if color is None:
+        return g + f'<text x="16" y="76" class="lab">{lab}</text></g>'
+    g += (f'<text x="16" y="70" class="lab" style="fill:{color}">{lab}</text>{extra}'
+          f'<rect x="16" y="80" width="{bw}" height="6" rx="3" fill="#0d1117"/>')
+    if value:
+        g += f'<rect x="16" y="80" width="{max(round(bw * fill), 3)}" height="6" rx="3" fill="{color}"/>'
+    return g + "</g>"
+
+
+# LeetCode: total + difficulty plates
 COLORS = {"Easy": "#2bff88", "Medium": "#ffb020", "Hard": "#ff4d6d"}
-dw, bw = 232, 200
+a(plate(20, 40, 232, solved["All"], total["All"], "TOTAL SOLVED"))
 for i, d in enumerate(("Easy", "Medium", "Hard")):
-    x = 262 + i * (dw + 10)
-    fill = round(bw * solved[d] / total[d]) if total[d] else 0
-    a(f'<g transform="translate({x},40)"><rect class="plate" width="{dw}" height="100" rx="3"/>'
-      f'<path class="br" d="M0 12V0H12M{dw-12} 100H{dw}V88"/>'
-      f'<text x="16" y="50" class="big">{solved[d]}<tspan class="m" font-weight="400"> / {total[d]}</tspan></text>'
-      f'<text x="16" y="70" class="lab" style="fill:{COLORS[d]}">{d.upper()}</text>'
-      f'<rect x="16" y="80" width="{bw}" height="6" rx="3" fill="#0d1117"/>'
-      + (f'<rect x="16" y="80" width="{max(fill, 3)}" height="6" rx="3" fill="{COLORS[d]}"/>' if solved[d] else "")
-      + "</g>")
+    a(plate(262 + i * 242, 40, 232, solved[d], total[d], d.upper(), COLORS[d], solved[d] / total[d] if total[d] else 0))
 
-a(f'<text x="20" y="162" class="m">source: leetcode.com/u/{USERNAME} · refreshed daily by GitHub Actions</text>')
+# NeetCode: one wide plate per list, with an Easy/Medium/Hard split
+if neet:
+    a('<text x="20" y="168" class="row">// NEETCODE ROADMAP</text>')
+    for i, (name, (ps, done)) in enumerate(neet.items()):
+        n = sum(p["slug"] in done for p in ps)
+        split = " · ".join(
+            f'{d[0]} {sum(p["slug"] in done for p in ps if p["difficulty"] == d)}/{sum(p["difficulty"] == d for p in ps)}'
+            for d in ("Easy", "Medium", "Hard"))
+        x, w = 20 + i * 484, 474
+        a(plate(x, 180, w, n, len(ps), name, "#00e5ff", n / len(ps),
+                f'<text x="{w-16}" y="50" class="m" text-anchor="end">{split}</text>'))
+
+a(f'<text x="20" y="{H-10}" class="m">source: leetcode.com/u/{USERNAME}'
+  f'{" · NeetCode lists from neetcode-gh/leetcode" if neet else ""} · refreshed daily by GitHub Actions</text>')
 a("</svg>")
 out.write_text("\n".join(s) + "\n", encoding="utf-8")
-print(f"wrote {out}: {solved['All']} solved (E{solved['Easy']} M{solved['Medium']} H{solved['Hard']})")
+print(f"wrote {out}: {solved['All']} solved (E{solved['Easy']} M{solved['Medium']} H{solved['Hard']})"
+      + "".join(f"; {n} {sum(p['slug'] in d for p in ps)}/{len(ps)}" for n, (ps, d) in (neet or {}).items()))

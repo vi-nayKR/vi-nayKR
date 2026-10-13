@@ -16,7 +16,9 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
-      - run: python scripts/leetcode_render.py assets/leetcode.svg
+      - run: python scripts/leetcode_render.py assets/leetcode.svg --require-neetcode
+        env:
+          LEETCODE_SESSION: ${{ secrets.LEETCODE_SESSION }}
       - name: Commit if changed
         run: |
           git diff --quiet assets/leetcode.svg && exit 0
