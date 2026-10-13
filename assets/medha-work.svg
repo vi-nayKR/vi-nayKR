@@ -15,10 +15,9 @@ text{font-family:'JetBrains Mono','Cascadia Code',Consolas,'Courier New',monospa
 <rect width="1000" height="372" fill="#0d1117"/>
 <text x="20" y="26" class="row">// PROOF OF WORK · MEDHA INNOVATIONS</text>
 <circle cx="958" cy="22" r="4" class="dot"/><text x="946" y="26" class="m" text-anchor="end">founding engineer</text>
-<g transform="translate(20,40)"><rect class="plate" width="232" height="64" rx="3"/><path class="br" d="M0 12V0H12M220 64H232V52"/><text x="16" y="34" class="big">754</text><text x="16" y="53" class="lab">COMMITS AUTHORED</text></g>
-<g transform="translate(262,40)"><rect class="plate" width="232" height="64" rx="3"/><path class="br" d="M0 12V0H12M220 64H232V52"/><text x="16" y="34" class="big">10</text><text x="16" y="53" class="lab">PRIVATE REPOS</text></g>
-<g transform="translate(504,40)"><rect class="plate" width="232" height="64" rx="3"/><path class="br" d="M0 12V0H12M220 64H232V52"/><text x="16" y="34" class="big">89</text><text x="16" y="53" class="lab">DAYS WITH COMMITS</text></g>
-<g transform="translate(746,40)"><rect class="plate" width="232" height="64" rx="3"/><path class="br" d="M0 12V0H12M220 64H232V52"/><text x="16" y="34" class="big">Feb–Oct 2026</text><text x="16" y="53" class="lab">ACTIVE WINDOW</text></g>
+<g transform="translate(20,40)"><rect class="plate" width="313" height="64" rx="3"/><path class="br" d="M0 12V0H12M301 64H313V52"/><text x="16" y="34" class="big">754</text><text x="16" y="53" class="lab">COMMITS AUTHORED</text></g>
+<g transform="translate(343,40)"><rect class="plate" width="313" height="64" rx="3"/><path class="br" d="M0 12V0H12M301 64H313V52"/><text x="16" y="34" class="big">10</text><text x="16" y="53" class="lab">PRIVATE REPOS</text></g>
+<g transform="translate(666,40)"><rect class="plate" width="313" height="64" rx="3"/><path class="br" d="M0 12V0H12M301 64H313V52"/><text x="16" y="34" class="big">89</text><text x="16" y="53" class="lab">DAYS WITH COMMITS</text></g>
 <text x="20" y="128" class="row">// COMMITS PER DAY</text>
 <text x="20" y="144" class="m">Mar</text>
 <text x="100" y="144" class="m">Apr</text>

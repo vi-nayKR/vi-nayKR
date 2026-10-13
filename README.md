@@ -58,7 +58,6 @@ Go service with Prometheus SLOs, Grafana dashboards, Alertmanager and black-box 
 
 
 
-Medha Innovations · digital-asset custody · regulated gaming.
 Co-author, [*Data Visualisation of Time Tradable Assets Using Machine Learning*](https://doi.org/10.1109/NMITCON58196.2023.10275962), IEEE NMITCON 2023.
 
 <div align="center">

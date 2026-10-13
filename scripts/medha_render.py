@@ -48,8 +48,8 @@ a('<circle cx="958" cy="22" r="4" class="dot"/><text x="946" y="26" class="m" te
 
 # stat plates
 stats = [(f"{n_commits}", "COMMITS AUTHORED"), (f"{n_repos}", "PRIVATE REPOS"),
-         (f"{n_days}", "DAYS WITH COMMITS"), (f"{first:%b}–{last:%b} {last:%Y}", "ACTIVE WINDOW")]
-pw = 232
+         (f"{n_days}", "DAYS WITH COMMITS")]
+pw = 313
 for i, (v, l) in enumerate(stats):
     x = 20 + i * (pw + 10)
     a(f'<g transform="translate({x},40)"><rect class="plate" width="{pw}" height="64" rx="3"/>'
