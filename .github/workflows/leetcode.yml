@@ -16,7 +16,8 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
-      - run: python scripts/leetcode_render.py assets/leetcode.svg --require-neetcode
+      # NeetCode row appears once the LEETCODE_SESSION secret is set; LeetCode totals don't need it
+      - run: python scripts/leetcode_render.py assets/leetcode.svg
         env:
           LEETCODE_SESSION: ${{ secrets.LEETCODE_SESSION }}
       - name: Commit if changed
