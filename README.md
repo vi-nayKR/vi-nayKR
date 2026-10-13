@@ -48,6 +48,8 @@ Go service with Prometheus SLOs, Grafana dashboards, Alertmanager and black-box 
 
 <img src="assets/stack.svg" alt="Skills" width="100%">
 
+<a href="https://leetcode.com/u/VinayKR/"><img src="assets/leetcode.svg" alt="LeetCode problems solved by difficulty" width="100%"></a>
+
 
 | | |
 |---|---|
