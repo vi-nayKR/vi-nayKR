@@ -23,7 +23,7 @@ days = collections.Counter(dt.date.fromisoformat(c["date"]) for c in allc)
 first, last = min(days), max(days)
 n_commits, n_repos, n_days = len(allc), len(repos), len(days)
 
-W, H = 1000, 372
+W, H = 1000, 298
 s = []
 a = s.append
 a(f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {W} {H}" width="{W}" height="{H}" role="img" '
@@ -46,22 +46,12 @@ a(f'<rect width="{W}" height="{H}" fill="#0d1117"/>')
 a('<text x="20" y="26" class="row">// PROOF OF WORK · MEDHA INNOVATIONS</text>')
 a('<circle cx="958" cy="22" r="4" class="dot"/><text x="946" y="26" class="m" text-anchor="end">founding engineer</text>')
 
-# stat plates
-stats = [(f"{n_commits}", "COMMITS AUTHORED"), (f"{n_repos}", "PRIVATE REPOS"),
-         (f"{n_days}", "DAYS WITH COMMITS")]
-pw = 313
-for i, (v, l) in enumerate(stats):
-    x = 20 + i * (pw + 10)
-    a(f'<g transform="translate({x},40)"><rect class="plate" width="{pw}" height="64" rx="3"/>'
-      f'<path class="br" d="M0 12V0H12M{pw-12} 64H{pw}V52"/>'
-      f'<text x="16" y="34" class="big">{v}</text><text x="16" y="53" class="lab">{l}</text></g>')
-
 # heatmap (weeks as columns, Mon..Sun rows)
 start = first - dt.timedelta(days=first.weekday())
 weeks = (last - start).days // 7 + 1
 cell, gap = 13, 3
-hx, hy = 20, 150
-a(f'<text x="{hx}" y="128" class="row">// COMMITS PER DAY</text>')
+hx, hy = 20, 76
+a(f'<text x="{hx}" y="54" class="row">// COMMITS PER DAY</text>')
 for m in range(first.month, last.month + 1):
     d = dt.date(first.year, m, 1)
     if d < first: continue
@@ -84,8 +74,8 @@ busiest = max(days.items(), key=lambda kv: kv[1])
 a(f'<text x="{hx}" y="{ly+34}" class="m">busiest day: {busiest[0]:%d %b %Y} · {busiest[1]} commits (frontends → k8s cutover)</text>')
 
 # per-repo bars
-bx, by, bw = 580, 150, 140
-a(f'<text x="{bx}" y="128" class="row">// COMMITS BY REPO</text>')
+bx, by, bw = 580, 76, 140
+a(f'<text x="{bx}" y="54" class="row">// COMMITS BY REPO</text>')
 mx = len(repos[0][1])
 for i, (name, cs) in enumerate(repos):
     y = by + i * 19
