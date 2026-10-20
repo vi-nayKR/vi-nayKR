@@ -31,16 +31,16 @@ Invoice ⇄ PO review. Typed extraction, decimal reconciliation, source evidence
 </td>
 <td width="33%" valign="top">
 
-**[FastAPI Agent Patterns](https://github.com/vi-nayKR/fastapi-genai-agent-patterns)**<br>
-Agent workflows with human approval, SSE streaming, Redis caching, OpenTelemetry and a fixture eval.<br><br>
-`LangGraph` `FastAPI` `Redis` `OTel`
+**[TraceWard](https://github.com/vi-nayKR/fastapi-genai-agent-patterns)**<br>
+Incident-triage agent: LangGraph supervisor, MCP tools, signed human approval, live eval on 50 held-out cases.<br><br>
+`LangGraph` `MCP` `FastAPI` `OTel`
 
 </td>
 <td width="33%" valign="top">
 
-**[Homelab SRE Observability](https://github.com/vi-nayKR/homelab-sre-observability)**<br>
-Go service with Prometheus SLOs, Grafana dashboards, Alertmanager and black-box probes.<br><br>
-`Go` `Prometheus` `Grafana`
+**[EvidenceRAG](https://github.com/vi-nayKR/enterprise-agentic-rag-platform)**<br>
+Cited-answer hybrid RAG with a resumable ablation harness, cross-family LLM judge and human labels.<br><br>
+`RAG` `BM25+dense` `RRF` `Evals`
 
 </td>
 </tr>
@@ -53,7 +53,7 @@ Go service with Prometheus SLOs, Grafana dashboards, Alertmanager and black-box 
 
 | | |
 |---|---|
-| Eval discipline | Every metric comes from a committed, rerunnable script; **live-model held-out evals for EvidenceRAG, TraceWard and ReconcileAI are in progress** |
+| Eval discipline | Every metric comes from a committed, rerunnable script; live-model held-out evals for TraceWard (50 cases) and ReconcileAI (20 receipts); EvidenceRAG pilot run |
 | Real product work | Founding engineer at Medha Innovations (two founders): Go platform, an LLM booking assistant with a grounding gate, and a deployed offline docs QA service. Repos are private, so here are 754 authored commits with SHAs: [**commit ledger →**](MEDHA.md) · live walkthrough on request |
 
 
