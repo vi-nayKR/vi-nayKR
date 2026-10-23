@@ -1,26 +1,28 @@
-# Medha engineering scope and public references
+# Medha engineering work and public references
 
-Medha Innovations was a self-funded, two-founder booking and messaging venture. The résumé-reported venture period is **March–September 2026**. This page separates that collaborative work from later experiments; it is not an independent audit of customer adoption or production availability.
+Medha Innovations was a self-funded booking and messaging venture founded by two people. I worked on it from March to September 2026 as a co-founder and Founding Engineer.
 
-## Backend and integration
+## My engineering focus
 
-My résumé describes collaborative engineering on a Go modular backend, PostgreSQL booking coordination, PostGIS discovery, role-aware APIs and Redis/WebSocket messaging. Individual contribution should be distinguished from co-founder work and tool assistance during a technical discussion.
+My work focused on the modular Go backend and product integration. The main areas included PostgreSQL-backed booking workflows, PostGIS-based discovery, role-aware APIs, and Redis and WebSocket messaging. I worked on the project with my co-founder.
 
-- [Public backend review branch](https://github.com/vi-nayKR/medha-platform-api/tree/security/publication-review)
-- [Publication review and boundaries](https://github.com/vi-nayKR/medha-platform-api/blob/security/publication-review/docs/PUBLICATION_REVIEW.md)
-- [Sanitized infrastructure review](https://github.com/vi-nayKR/medha-platform-infra/tree/security/publication-review)
+Public reference material:
 
-Infrastructure definitions and historical GitOps configuration are not proof of the current private runtime. Public-snapshot fixes do not revoke private sessions, rotate credentials or certify private/deployed authentication paths. Publication rights and historical material require separate owner review.
+- [Go backend reference](https://github.com/vi-nayKR/medha-platform-api)
+- [Backend publication notes](https://github.com/vi-nayKR/medha-platform-api/blob/main/docs/PUBLICATION_REVIEW.md)
+- [Sanitized infrastructure reference](https://github.com/vi-nayKR/medha-platform-infra)
 
-## Follow-on AI work: October 2026
+These repositories are public reference snapshots. They do not contain private customer data or every part of the original product.
 
-- **Sahayak:** an LLM booking-assistant prototype with structured intent, read-only tools, grounding checks and human-approved suggestions. It must not be presented as a customer-deployed assistant delivered during the earlier venture period.
-- **Documentation retrieval:** an extractive cited-evidence experiment using BM25 and embeddings. A small internal/personal deployment observation does not establish customer production use; more retrieval components did not automatically improve the measured baseline.
+## Later AI experiments
 
-Private corpora, source, customer information, operational logs and account data are not provided as public proof. A walkthrough must respect confidentiality and co-founder ownership.
+After the venture period, I explored two related ideas separately from the original product work:
 
-## How to interpret evidence
+- **Sahayak:** a booking-assistant prototype using structured intent, read-only tools, grounding checks and human-reviewed suggestions.
+- **Documentation retrieval:** an experiment with cited evidence, BM25 and embeddings.
 
-Commit counts measure repository activity, not business value, sole authorship of a product, production uptime or model quality. Historical commit messages do not independently establish the claims in those messages. This page therefore uses bounded public references rather than a private-commit ledger or an undated proof reel.
+These experiments began after the venture period and were separate from the product work described above.
+
+Private source code and customer information are not published.
 
 [Back to profile](README.md)
