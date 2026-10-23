@@ -1,7 +1,7 @@
 # Vinay K R
 
 **Software Engineer · Backend & Full-Stack · Applied AI**
-Bengaluru, India · [Portfolio](https://portfolio.vinaykr.workers.dev/) · [ATS résumé](https://portfolio.vinaykr.workers.dev/resumes/Vinay_K_R_Software_Engineer_Resume_ATS.pdf) · [LinkedIn](https://linkedin.com/in/vi-naykr) · [Email](mailto:vinayravindranatha@gmail.com)
+Bengaluru, India · [Portfolio](https://portfolio.vinaykr.workers.dev/) · [Resume](https://portfolio.vinaykr.workers.dev/resumes/Vinay_K_R_Software_Engineer_Resume.pdf) · [LinkedIn](https://linkedin.com/in/vi-naykr) · [Email](mailto:vinayravindranatha@gmail.com)
 
 I build backend workflows and applied-AI applications with explicit authorization, evaluation and human review. My background includes full-stack work at Light & Wonder and Liminal Custody, plus collaborative co-founder engineering at Medha Innovations.
 
@@ -11,7 +11,7 @@ I build backend workflows and applied-AI applications with explicit authorizatio
 
 Predefined checkpointed workflow: parse logs, retrieve related incidents, suggest causes/fixes and request approval before persisting a **local ticket draft**. It does not file external issues or execute fixes.
 
-- [Architecture](https://github.com/vi-nayKR/fastapi-genai-agent-patterns/blob/docs/portfolio-evidence/docs/architecture.md) · [Evidence and limitations](https://github.com/vi-nayKR/fastapi-genai-agent-patterns/blob/docs/portfolio-evidence/docs/evidence.md) · [Local demo script](https://github.com/vi-nayKR/fastapi-genai-agent-patterns/blob/docs/portfolio-evidence/docs/demo-script.md)
+- [Architecture](https://github.com/vi-nayKR/fastapi-genai-agent-patterns/blob/docs/portfolio-evidence/docs/architecture.md) · [Evidence and limitations](https://github.com/vi-nayKR/fastapi-genai-agent-patterns/blob/docs/portfolio-evidence/docs/evidence.md)
 - Recorded evaluation uses 50 synthetic known-family holdouts. Approval-bypass probes are not proof of general security or production incident accuracy.
 - The no-key demonstration uses deterministic suggestions, not a fresh model response.
 
@@ -19,7 +19,7 @@ Predefined checkpointed workflow: parse logs, retrieve related incidents, sugges
 
 Local invoice/PO workbench combining parsing, typed extraction, decimal-exact checks, source evidence and correction history. A reviewer can correct extracted data and rerun controls without another model call.
 
-- [Architecture](https://github.com/vi-nayKR/multimodal-document-intelligence/blob/docs/portfolio-evidence/docs/architecture.md) · [Evidence and limitations](https://github.com/vi-nayKR/multimodal-document-intelligence/blob/docs/portfolio-evidence/docs/evidence.md) · [Local demo script](https://github.com/vi-nayKR/multimodal-document-intelligence/blob/docs/portfolio-evidence/docs/demo-script.md)
+- [Architecture](https://github.com/vi-nayKR/multimodal-document-intelligence/blob/docs/portfolio-evidence/docs/architecture.md) · [Evidence and limitations](https://github.com/vi-nayKR/multimodal-document-intelligence/blob/docs/portfolio-evidence/docs/evidence.md)
 - Recorded Gemini field F1 of 76.0% covers 20 held-out CORD receipts, not invoice/PO discrepancy accuracy. Synthetic controls and review burden are reported separately.
 - The fictional prerecorded sample bypasses live OCR/model extraction; it is not payment authorization.
 
@@ -28,7 +28,7 @@ Local invoice/PO workbench combining parsing, typed extraction, decimal-exact ch
 - **Light & Wonder:** internship Mar–Jul 2023; employment Aug 2023–Jul 2025. Final title: Senior Associate Software Engineer. No unverified promotion date is asserted.
 - **Liminal Custody / First Answer India Services Pvt. Ltd.:** Software Engineer, Full Stack, Nov 2025–Mar 2026.
 - **Medha Innovations:** self-funded, two-founder venture, Mar–Sep 2026 as reported. Collaborative Go backend and integration work; [scope and public references](MEDHA.md).
-- October AI prototypes are follow-on portfolio/R&D work, not backdated venture deliveries. Detailed employer contributions are résumé-reported, not independently verified by public code.
+- October AI prototypes are follow-on portfolio/R&D work, not backdated venture deliveries. Detailed employer contributions are reported in the resume, not independently verified by public code.
 
 ## Supporting engineering evidence
 
