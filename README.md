@@ -2,7 +2,7 @@
 
 **Software Engineer | Backend, Full Stack & Applied AI**
 
-Bengaluru, India · [Portfolio](https://portfolio.vinaykr.workers.dev/) · [Resume](https://portfolio.vinaykr.workers.dev/resumes/Vinay_K_R_Software_Engineer_Resume.pdf) · [LinkedIn](https://linkedin.com/in/vi-naykr) · [Email](mailto:vinayravindranatha@gmail.com)
+Bengaluru, India · [Portfolio](https://portfolio.vinaykr.workers.dev/) · [LinkedIn](https://linkedin.com/in/vi-naykr) · [Email](mailto:vinayravindranatha@gmail.com)
 
 I am a software engineer based in Bengaluru. My experience covers backend services, full-stack products and SQL-heavy workflows, and I have recently been exploring practical ways to use AI in software systems. I work mainly with Python, TypeScript, Go and SQL.
 
