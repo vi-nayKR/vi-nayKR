@@ -5,15 +5,15 @@ Bengaluru, India · [Portfolio](https://portfolio.vinaykr.workers.dev/) · [Link
 
 ---
 
-### 🛠️ Tech Stack
+###  Tech Stack
 `Go (Golang)` · `C# / .NET Core` · `Angular` · `React` · `TypeScript` · `Python` · `PostgreSQL` · `PostGIS` · `Redis` · `Kafka` · `Kubernetes` · `Argo CD` · `Docker` · `AWS`
 
 ---
 
 <table>
 <tr>
-<th width="45%" align="left">💼 Professional Experience</th>
-<th width="55%" align="left">🚀 Flagship Projects</th>
+<th width="45%" align="left"> Professional Experience</th>
+<th width="55%" align="left"> Flagship Projects</th>
 </tr>
 <tr>
 <td width="45%" valign="top">
