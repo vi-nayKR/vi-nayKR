@@ -2,7 +2,7 @@
 
 **Full Stack Software Engineer | Go, C# / .NET Core, Angular, Python, AWS & PostgreSQL**
 
-Bengaluru, India · [Portfolio](https://portfolio.vinaykr.workers.dev/) · [LinkedIn](https://www.linkedin.com/in/vinay-k-r/) · [Email](mailto:vinaykr0605@gmail.com) · [GitHub](https://github.com/vi-nayKR)
+Bengaluru, India · [Portfolio](https://portfolio.vinaykr.workers.dev/) · [LinkedIn](https://www.linkedin.com/in/vi-naykr/) · [Email](mailto:vinayravindranatha@gmail.com) · [GitHub](https://github.com/vi-nayKR)
 
 ---
 
