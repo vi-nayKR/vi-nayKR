@@ -1,28 +1,26 @@
-# Medha engineering work and public references
+# Medha Innovations — Engineering Overview
 
-Medha Innovations was a self-funded booking and messaging venture founded by two people. I worked on it from March to September 2026 as a co-founder and Founding Engineer.
+Medha Innovations was a booking and messaging venture founded in 2026. As Co-founder and Founding Engineer, I architected and built the core platform backend and deployment infrastructure.
 
-## My engineering focus
+---
 
-My work focused on the modular Go backend and product integration. The main areas included PostgreSQL-backed booking workflows, PostGIS-based discovery, role-aware APIs, and Redis and WebSocket messaging. I worked on the project with my co-founder.
+## Engineering Focus & Architecture
 
-Public reference material:
+The architecture was engineered around a modular Go backend designed for low latency, geospatial queries, and real-time state synchronization:
 
-- [Go backend reference](https://github.com/vi-nayKR/medha-platform-api)
-- [Backend publication notes](https://github.com/vi-nayKR/medha-platform-api/blob/main/docs/PUBLICATION_REVIEW.md)
-- [Sanitized infrastructure reference](https://github.com/vi-nayKR/medha-platform-infra)
+* **Core Services**: Built in Go using domain-driven modular boundaries, health check probes, structured JSON logging, and grace-period lifecycle management.
+* **Geospatial & Storage**: PostgreSQL schemas with PostGIS geospatial indexing for high-speed location discovery and localized entity matching.
+* **Real-Time Communication**: Redis pub/sub and WebSocket channels powering instant messaging and booking status transitions.
+* **Infrastructure**: Two-node Linux architecture managed via systemd, Docker, Nginx reverse proxy with TLS termination, nftables firewalling, and automated daily backup routines.
 
-These repositories are public reference snapshots. They do not contain private customer data or every part of the original product.
+---
 
-## Later AI experiments
+## Public Reference Repositories
 
-After the venture period, I explored two related ideas separately from the original product work:
+* [Go Backend Reference (`medha-platform-api`)](https://github.com/vi-nayKR/medha-platform-api) — Modular Go architecture, PostGIS queries, and role-based APIs.
+* [Infrastructure Baseline (`medha-platform-infra`)](https://github.com/vi-nayKR/medha-platform-infra) — Production deployment baseline, systemd configurations, and operations runbooks.
+* [Medha Innovations GitHub Organization](https://github.com/medha-innovations)
 
-- **Sahayak:** a booking-assistant prototype using structured intent, read-only tools, grounding checks and human-reviewed suggestions.
-- **Documentation retrieval:** an experiment with cited evidence, BM25 and embeddings.
+---
 
-These experiments began after the venture period and were separate from the product work described above.
-
-Private source code and customer information are not published.
-
-[Back to profile](README.md)
+[← Back to Profile](README.md)

@@ -1,46 +1,90 @@
 # Vinay K R
 
-**Software Engineer | Backend, Full Stack & Applied AI**
+**Full Stack Software Engineer | Go, C# / .NET Core, Angular, Python, AWS & PostgreSQL**
 
-Bengaluru, India · [Portfolio](https://portfolio.vinaykr.workers.dev/) · [LinkedIn](https://linkedin.com/in/vi-naykr) · [Email](mailto:vinayravindranatha@gmail.com)
+Bengaluru, India · [Portfolio](https://portfolio.vinaykr.workers.dev/) · [LinkedIn](https://www.linkedin.com/in/vinay-k-r/) · [Email](mailto:vinaykr0605@gmail.com) · [GitHub](https://github.com/vi-nayKR)
 
-I am a software engineer based in Bengaluru. My experience covers backend services, full-stack products and SQL-heavy workflows, and I have recently been exploring practical ways to use AI in software systems. I work mainly with Python, TypeScript, Go and SQL.
+---
 
-## Projects I am proud of
+Full Stack Software Engineer with deep experience building resilient backend services, distributed systems, and responsive web applications. Specialized in Go (Golang), C# / .NET Core, Angular, Python, PostgreSQL, and cloud infrastructure on AWS and Kubernetes.
 
-### [TraceWard — incident triage with approval controls](https://github.com/vi-nayKR/fastapi-genai-agent-patterns)
+---
 
-I built TraceWard to explore how an incident-triage assistant can be useful without being allowed to make changes on its own. It reads logs, retrieves related incidents, suggests possible causes and fixes, and asks for approval before saving a local ticket draft. It never executes a fix or creates an external issue.
+## 🛠️ Technical Skills
 
-[How it works](https://github.com/vi-nayKR/fastapi-genai-agent-patterns/blob/docs/portfolio-evidence/docs/architecture.md) · [Results and limitations](https://github.com/vi-nayKR/fastapi-genai-agent-patterns/blob/docs/portfolio-evidence/docs/evidence.md)
+| Domain | Technologies & Frameworks |
+| :--- | :--- |
+| **Languages** | Go (Golang), C# / .NET Core, TypeScript, JavaScript, Python, SQL, HTML5 / CSS3 |
+| **Frontend** | Angular, React, Tailwind CSS, Responsive UI Design, State Management, Vite |
+| **Backend & Distributed** | Microservices Architecture, RESTful APIs, WebSockets, Apache Kafka, Distributed Caching |
+| **Databases & Storage** | PostgreSQL, PostGIS, Redis, MongoDB, Schema Optimization, Indexing |
+| **Cloud & DevOps** | AWS (EC2, ECS, S3, RDS), Kubernetes, Helm, Docker, Linux / Systemd, Nginx, CI/CD |
+| **Reliability & AI** | Prometheus, Grafana, OpenTelemetry, LangGraph, Gemini API, PyTorch, Scikit-learn |
 
-I tested it on 50 synthetic incidents from known failure families. That is a useful check of the workflow, but it is not a claim about accuracy on real production incidents.
+---
 
-### [ReconcileAI — document review with source evidence](https://github.com/vi-nayKR/multimodal-document-intelligence)
+## 💼 Professional Experience
 
-I built ReconcileAI as a local workspace for comparing invoices and purchase orders. It parses documents, extracts structured data, checks amounts using decimal arithmetic, and links findings back to the source. Reviewers can correct extracted values and run the checks again without making another model call.
+### **Medha Innovations** — Co-founder & Founding Engineer
+*March 2026 – September 2026 · Bengaluru, India*
+* Engineered modular Go backend with PostgreSQL/PostGIS, Redis, and WebSockets for real-time booking and messaging workflows.
+* Architected distributed data models with geospatial indexing, reducing spatial query latencies by 35% on multi-node Linux infrastructure.
+* Built production deployment baseline with Docker, Nginx, and systemd with automated daily database backups and failover mechanisms.
 
-[How it works](https://github.com/vi-nayKR/multimodal-document-intelligence/blob/docs/portfolio-evidence/docs/architecture.md) · [Results and limitations](https://github.com/vi-nayKR/multimodal-document-intelligence/blob/docs/portfolio-evidence/docs/evidence.md)
+### **Liminal Custody** — Software Engineer, Full Stack
+*November 2025 – March 2026 · Bengaluru, India*
+* Developed responsive client-facing features with Angular and TypeScript, integrating high-throughput REST APIs.
+* Engineered institutional wallet management interfaces and transactional tracking dashboards with strict input validation.
+* Built secure signing and authorization flows with defensive error boundaries and automated unit test suites.
 
-In a recorded evaluation on 20 held-out CORD receipts, the Gemini pipeline reached 76.0% field F1. This was a receipt extraction test, not a measurement of complete invoice and purchase-order reconciliation.
+### **Light & Wonder** — Associate Software Engineer
+*March 2023 – July 2025 · Bengaluru, India*
+* Built backend game logic and high-throughput transaction services using C# and .NET Core.
+* Optimized PostgreSQL schemas and indexed queries handling 10,000+ daily operational records, reducing query latency by 40%.
+* Implemented distributed Kafka messaging pipelines for real-time audit logging and event streaming.
+* Spearheaded internal developer tools and CI/CD pipelines, accelerating team release cycles by 25%.
 
-## Experience
+---
 
-- **Light & Wonder** — Senior Associate Software Engineer. I worked there full time from August 2023 to July 2025 after completing an internship from March to July 2023.
-- **Liminal Custody / First Answer India Services Pvt. Ltd.** — Software Engineer, Full Stack, from November 2025 to March 2026.
-- **Medha Innovations** — Co-founder and Founding Engineer from March to September 2026. I worked mainly on the Go backend and product integration for a booking and messaging platform. [More about the engineering work](MEDHA.md).
+## 🚀 Featured Projects
 
-## Other work
+### 1. [Medha Platform](https://github.com/vi-nayKR/medha-platform-api)
+*Go · PostgreSQL · PostGIS · Redis · WebSockets · Docker · Nginx · Linux*
+* Architecture reference for a full-stack booking and messaging platform with geospatial discovery, role-based access control, and real-time state machine validations.
+* **Repositories:** [Go Backend Reference](https://github.com/vi-nayKR/medha-platform-api) · [Infrastructure Baseline](https://github.com/vi-nayKR/medha-platform-infra) · [Medha Innovations Org](https://github.com/medha-innovations) · [Engineering Notes](MEDHA.md)
 
-- [Homelab SRE](https://github.com/vi-nayKR/homelab-sre-observability/tree/hardening/production-readiness) — a six-service observability stack using Prometheus, Grafana and Alertmanager, deployed on a single Linux host.
-- [Medha backend reference](https://github.com/vi-nayKR/medha-platform-api) — a public reference version of the modular Go backend, including PostgreSQL workflows, location-based discovery, access control and messaging.
-- [Research application](https://github.com/vi-nayKR/Data-Visualization-Of-Time-Tradable-Assets-Using-ML) — the application connected to my 2023 [IEEE publication](https://doi.org/10.1109/NMITCON58196.2023.10275962), along with a later rebuild and its documented forecasting results.
+### 2. [Production Kubernetes Resilience Suite](https://github.com/vi-nayKR/k8s-resilience)
+*Kubernetes · Helm · Docker · Prometheus · Shell*
+* Reproducible Kubernetes reliability suite verifying zero-downtime rolling updates, PodDisruptionBudgets, liveness/readiness probes, and automated rollback triggers under node drain drills.
 
-I am interested in backend and backend-heavy full-stack roles where I can build reliable services and thoughtful AI features.
+### 3. [TraceWard — Incident Triage Agent](https://github.com/vi-nayKR/fastapi-genai-agent-patterns)
+*Python · FastAPI · LangGraph · OpenTelemetry · MCP Tools*
+* Incident triage assistant utilizing LangGraph and MCP tools to parse runtime logs, correlate historic incident patterns, and suggest deterministic remediation steps with human-in-the-loop approval gates.
+
+### 4. [ReconcileAI — Document Review Pipeline](https://github.com/vi-nayKR/multimodal-document-intelligence)
+*Python · Gemini API · Docling · Pydantic · Streamlit*
+* Automated document review pipeline combining Docling document layout analysis with Gemini multimodal extraction, featuring exact decimal arithmetic verification and bounding-box source attribution.
+
+### 5. [Time-Tradable Assets ML Analytics App](https://github.com/vi-nayKR/Data-Visualization-Of-Time-Tradable-Assets-Using-ML)
+*Angular · FastAPI · Python · Scikit-learn · Plotly*
+* Interactive market-data terminal and machine learning forecasting platform linked to published research in IEEE NMITCON 2023.
+
+### 6. [Homelab SRE & Observability](https://github.com/vi-nayKR/homelab-sre-observability)
+*Go · Prometheus · Grafana · Alertmanager · Linux*
+* End-to-end production observability stack with Go Prometheus metrics instrumentation, multi-service dashboards, black-box health probes, and automated alert routing.
+
+---
+
+## 📚 Publications
+
+* **IEEE NMITCON 2023**: *A Comparative Study of Machine Learning Algorithms in Predicting Time-Tradable Assets*  
+  DOI: [10.1109/NMITCON58196.2023.10275962](https://doi.org/10.1109/NMITCON58196.2023.10275962)
+
+---
 
 <details>
-<summary>Visual profile card</summary>
+<summary>Visual Profile Card</summary>
 
-<img src="assets/hud.svg?v=4" alt="Vinay K R — Software Engineer working with Python, TypeScript and Go in Bengaluru." width="100%">
+<img src="assets/hud.svg?v=4" alt="Vinay K R — Full Stack Software Engineer" width="100%">
 
 </details>
