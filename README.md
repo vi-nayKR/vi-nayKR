@@ -6,17 +6,17 @@ Bengaluru, India · [Portfolio](https://portfolio.vinaykr.workers.dev/) · [Link
 ---
 
 ### 🛠️ Tech Stack
-`Go (Golang)` · `C# / .NET Core` · `Angular` · `React` · `TypeScript` · `Python` · `PostgreSQL` · `PostGIS` · `Redis` · `Kafka` · `Kubernetes` · `Docker` · `AWS`
+`Go (Golang)` · `C# / .NET Core` · `Angular` · `React` · `TypeScript` · `Python` · `PostgreSQL` · `PostGIS` · `Redis` · `Kafka` · `Kubernetes` · `Argo CD` · `Docker` · `AWS`
 
 ---
 
 <table>
 <tr>
-<th width="50%" align="left">💼 Professional Experience</th>
-<th width="50%" align="left">🚀 Key Projects</th>
+<th width="45%" align="left">💼 Professional Experience</th>
+<th width="55%" align="left">🚀 Flagship Projects</th>
 </tr>
 <tr>
-<td width="50%" valign="top">
+<td width="45%" valign="top">
 
 #### **Medha Innovations**
 *Founding Engineer (Mar 2026 – Sep 2026)*
@@ -38,32 +38,22 @@ Bengaluru, India · [Portfolio](https://portfolio.vinaykr.workers.dev/) · [Link
 * Built CI/CD pipelines accelerating team release cycles by 25%.
 
 </td>
-<td width="50%" valign="top">
+<td width="55%" valign="top">
 
-#### **[Medha Platform](https://github.com/vi-nayKR/medha-platform-api)**
-`Go` · `PostgreSQL` · `Redis` · `WebSockets`  
-Modular booking & messaging platform with geospatial search, state machines, and RBAC.  
-*Links:* [Backend](https://github.com/vi-nayKR/medha-platform-api) · [Infra](https://github.com/vi-nayKR/medha-platform-infra) · [Org](https://github.com/medha-innovations)
+#### **[Medha Full-Stack Platform & Infrastructure](https://github.com/medha-innovations/medha-api)**
+`Go` · `Angular` · `PostgreSQL/PostGIS` · `Redis` · `Kubernetes` · `Argo CD` · `AWS`  
+Designed a 21-domain Go (Chi, pgx) backend (109+ tests) and Angular web/admin workflows with context-carried PostgreSQL/PostGIS transactions, multi-pod Redis Pub/Sub WebSocket routing, and zero-downtime Kubernetes (k3s) GitOps delivery via Argo CD, Kustomize, and AWS.  
+*Links:* [medha-api](https://github.com/medha-innovations/medha-api) · [medha-infra](https://github.com/medha-innovations/medha-infra)
 
-#### **[K8s Resilience Suite](https://github.com/vi-nayKR/k8s-resilience)**
-`Kubernetes` · `Helm` · `Prometheus` · `Shell`  
-Zero-downtime rolling updates, PDBs, probes, and automated rollback drills.
+#### **[Distributed Payments & Ledger Engine](https://github.com/dev-marker/payments)**
+`Go` · `PostgreSQL` · `Redis` · `gRPC` · `NATS JetStream` · `Docker`  
+Engineered a double-entry payment and ledger microservice in Go (Golang) using gRPC protobuf contracts, PostgreSQL row-locked ACID transactions, transactional outbox event streaming over NATS JetStream durable consumers, and Redis idempotency keys in Docker.  
+*Link:* [dev-marker/payments](https://github.com/dev-marker/payments)
 
-#### **[TraceWard Triage Agent](https://github.com/vi-nayKR/fastapi-genai-agent-patterns)**
-`Python` · `FastAPI` · `LangGraph` · `MCP`  
-Incident triage agent parsing runtime logs with human-in-the-loop approval gates.
-
-#### **[ReconcileAI Pipeline](https://github.com/vi-nayKR/multimodal-document-intelligence)**
-`Python` · `Gemini API` · `Docling` · `Pydantic`  
-Invoice & PO review with exact decimal controls and bounding-box attribution.
-
-#### **[ML Analytics Terminal](https://github.com/vi-nayKR/Data-Visualization-Of-Time-Tradable-Assets-Using-ML)**
-`Angular` · `FastAPI` · `Scikit-learn`  
-Market terminal linked to published research in [IEEE NMITCON 2023](https://doi.org/10.1109/NMITCON58196.2023.10275962).
-
-#### **[Homelab SRE Stack](https://github.com/vi-nayKR/homelab-sre-observability)**
-`Go` · `Prometheus` · `Grafana` · `Linux`  
-Production observability stack with Go Prometheus metrics, SLOs, and alerts.
+#### **[Cloud-Native Kubernetes Resilience Suite](https://github.com/vi-nayKR/k8s-resilience)**
+`Go` · `Kubernetes` · `Docker` · `Kustomize` · `Conftest/Rego` · `Bash`  
+Built a cloud-native reliability and policy suite in Go and Bash enforcing Conftest/Rego admission/manifest guardrails on Kustomize overlays, 99.5% SLO health probes, and 7 automated Kubernetes chaos/failure recovery playbooks.  
+*Link:* [vi-nayKR/k8s-resilience](https://github.com/vi-nayKR/k8s-resilience)
 
 </td>
 </tr>
